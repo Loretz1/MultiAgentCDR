@@ -3,3 +3,4 @@
 /doc/experiments/** -text -whitespace
 /scripts/** -text whitespace=cr-at-eol
 /tests/** -text whitespace=cr-at-eol
+doc/experiments/2026-10-06_featurize_real/artifacts/MultiAgentCDR/runs/pilot_v1/encoder/vectors.npz filter=lfs diff=lfs merge=lfs -text
