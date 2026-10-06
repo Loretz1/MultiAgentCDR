@@ -1,0 +1,46 @@
+{
+  "state": "complete",
+  "completed_at": "2026-10-06T01:25:44.248584+00:00",
+  "request": {
+    "kind": "emcdr_g",
+    "bundle_sha256": "1b5ff2ceab47638edfe7e3c525e81d9cd7b36942f130503c9522380f3b48b8fc",
+    "config": {
+      "seed": 999,
+      "feature_dim": 4,
+      "mlp_layers": 0,
+      "mlp_hidden_dim": 128,
+      "dropout": 0.2,
+      "source_epochs": 2,
+      "target_epochs": 2,
+      "mapping_epochs": 3,
+      "source_lr": 0.01,
+      "target_lr": 0.01,
+      "mapping_lr": 0.001,
+      "batch_size": 2,
+      "device": "cpu",
+      "baseline_sha256": "44f5ca8ca0f0247b3d94aa76cb0bcfdf8142f45b3f4f49091080e47ca9001889",
+      "implementation_sha256": "be35869110ae16f3b4ea96463f02a01343d6c70488ea2748646a7851e46471f9"
+    }
+  },
+  "files": {
+    "checkpoint.pt": {
+      "sha256": "788abd4b72802c5e5bc769f45e8bc0f5fbbe50d571abea2aea3b979eee30de06",
+      "bytes": 3855
+    },
+    "vectors.npz": {
+      "sha256": "c76f9d8c6e5266d624f8013bb6bacd503b36c298cc1a5dc9b1006a1215e8373d",
+      "bytes": 586
+    },
+    "training.jsonl": {
+      "sha256": "8b08226b4813a017d5a87133abee54d2c3354fe5cdee0ea6fe8561cd79c2a143",
+      "bytes": 378
+    }
+  },
+  "baseline_source_sha256": "44f5ca8ca0f0247b3d94aa76cb0bcfdf8142f45b3f4f49091080e47ca9001889",
+  "training_scope": "all_source_train;visible_target_train;support_only_mapping",
+  "selection": "fixed_epochs_no_hidden_feedback",
+  "support_users": 2,
+  "score_definition": "mapped_source_user dot target_item;not_a_probability",
+  "torch_version": "1.12.0",
+  "elapsed_seconds": 0.031
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "agent_server_transfer_v1",
+  "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+  "code_files": {
+    "scripts/agent_pipeline_common.py": {
+      "sha256": "7d6d8ad375b5d9c3b65bacf3e72bfae3b8896571eb85695daecd65a0416e2cbe",
+      "bytes": 9901
+    },
+    "scripts/encode_agent_text.py": {
+      "sha256": "75cd182eea4be895a023b3d4c30eb134880215046969926a714ceae6dbf67fe6",
+      "bytes": 5200
+    },
+    "scripts/train_agent_g.py": {
+      "sha256": "6953adb9340d9cb3f9e98af4f46b84476c828f19eb074618dd9c728d48820af3",
+      "bytes": 7656
+    },
+    "scripts/export_agent_evidence.py": {
+      "sha256": "0647ef534d5dc7c2b440d9dd8b99d760c956b5ec37fc34d576cc29e3741c323a",
+      "bytes": 18664
+    },
+    "scripts/prepare_agent_server.py": {
+      "sha256": "f3d54f5e638593534b4ad20342ef1d306455e91426e9ea915a870c3ccffe7dbe",
+      "bytes": 5571
+    },
+    "scripts/configs/cloth_sports_agent.json": {
+      "sha256": "080d95ff1acb0c4f3390cb76081b138a0c87f610ef664ff4508152634dcb50db",
+      "bytes": 750
+    },
+    "scripts/requirements-agent-evidence.txt": {
+      "sha256": "fba906c4bed73eeeab3655993035d1838bb12f4fab163cddabacb60ed105059a",
+      "bytes": 159
+    },
+    "scripts/bootstrap_agent_server.sh": {
+      "sha256": "e3effe476eaf1ff49934356028d954f164c9120f55a26043e5c68734630b73d0",
+      "bytes": 1016
+    },
+    "scripts/run_agent_evidence.sh": {
+      "sha256": "391c04f7ddbfe3114289243cbce37a0d97ed50f28c7f6a92386abcacf3b52554",
+      "bytes": 1007
+    },
+    "scripts/README_agent_evidence.md": {
+      "sha256": "4828ac1b52c61c82be90ba19eb1348f8b977d6e817b7462aff308d2ef13a4432",
+      "bytes": 7899
+    },
+    "scripts/collect_agent_feedback.py": {
+      "sha256": "4660a05ae14660847656e72e52320f850299eab2b880322da0c0d9ced3b82408",
+      "bytes": 18344
+    },
+    "scripts/README_agent_feedback.md": {
+      "sha256": "02053cdd4ceff355253e57ab1b7c0b5ae5c035110a75035e17b5a76cc9bde296",
+      "bytes": 3326
+    },
+    "scripts/start_agent_vllm.sh": {
+      "sha256": "3483902cdcdaf6b83a33d1767a65e079f6a308b0962edef6837d73d9bb6d8ca6",
+      "bytes": 633
+    },
+    "CDRec/src/models/emcdr.py": {
+      "sha256": "44f5ca8ca0f0247b3d94aa76cb0bcfdf8142f45b3f4f49091080e47ca9001889",
+      "bytes": 5684
+    },
+    "CDRec/src/common/abstract_recommender.py": {
+      "sha256": "94f2250eba754b5aa1d38d8ba3759267f397f95dc621a095c648a37c33cd30b0",
+      "bytes": 3597
+    },
+    "CDRec/src/common/init.py": {
+      "sha256": "70833ce42393764daa82b1364673a60704a62d9e40f140adaf2b408cacd503c9",
+      "bytes": 1593
+    },
+    "CDRec/src/common/loss.py": {
+      "sha256": "3405dc71881faca7ee697d1a84aa4c4bc06926c8fac45bb368bdd23cae33bd00",
+      "bytes": 1665
+    }
+  },
+  "bundle_files": {
+    "manifest.json": {
+      "sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+      "bytes": 1657
+    },
+    "request.json": {
+      "sha256": "f7cec92565a14a4cba1df8a7cc6d1f860d23d7671eef4f5a1399dc332e6b4dec",
+      "bytes": 182
+    },
+    "status.json": {
+      "sha256": "126ecdaf5dbd824a849d27149796d4e5d39ee762ab09620331c253f3e46e1e0b",
+      "bytes": 82
+    },
+    "interactions.npz": {
+      "sha256": "cbad94ac449b7670bab0c2b5dde26343a8928314e1a98d862fb238da17ff85a9",
+      "bytes": 1604581
+    },
+    "groups.json": {
+      "sha256": "d999088ebe0b538f674817428d3279bfab73709663a2cc5c3b445b692c810b9f",
+      "bytes": 33801
+    },
+    "id_mapping.json": {
+      "sha256": "d4d7bd3fdd19c6781baf983af5e6b9cb9a0505e7774282541cff983c7f6798b4",
+      "bytes": 6176462
+    },
+    "source_profiles.jsonl": {
+      "sha256": "b46db35cafdcbaee44c7f316001f5f5b1e81ecc09f850acfbd0ab2f2a913f824",
+      "bytes": 174865936
+    },
+    "source_catalog.jsonl": {
+      "sha256": "cdeebe28c70fb2801d564b85294b440a42c7885b1f187ded09839660e4cef55c",
+      "bytes": 18052334
+    },
+    "target_catalog.jsonl": {
+      "sha256": "92f47fb44dabd5688b071beae3e689bcb624632e62c41993637f79ac71d04e12",
+      "bytes": 29410369
+    }
+  }
+}

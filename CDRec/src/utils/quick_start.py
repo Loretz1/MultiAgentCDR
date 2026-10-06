@@ -11,6 +11,13 @@ import platform
 import os
 import torch.utils.tensorboard as tb
 
+
+def _is_better_validation_score(score, best_score, bigger):
+    if score is None:
+        return False
+    return best_score is None or (score > best_score if bigger else score < best_score)
+
+
 def quick_start(model, dataset, domains, save_model=True):
     config = Config(model, dataset, domains)
     logfilename = init_logger(config)
@@ -41,11 +48,10 @@ def quick_start(model, dataset, domains, save_model=True):
 
     ############ Dataset loadded, run model
     hyper_ret = []
-    val_metric = config['valid_metric'].lower()
-    best_test_value_warm = 0.0
-    best_test_value_cold = 0.0
-    best_test_idx_warm = None
-    best_test_idx_cold = None
+    best_valid_value_warm = None
+    best_valid_value_cold = None
+    best_valid_idx_warm = None
+    best_valid_idx_cold = None
     idx = 0
 
     logger.info('\n\n=================================\n\n')
@@ -112,13 +118,15 @@ def quick_start(model, dataset, domains, save_model=True):
             hyper_ret.append((hyper_tuple, best_valid_result_warm, best_test_upon_valid_warm, best_valid_result_cold,
                               best_test_upon_valid_cold))
 
-            # save best test
-            if best_test_upon_valid_warm[val_metric] > best_test_value_warm:
-                best_test_value_warm = best_test_upon_valid_warm[val_metric]
-                best_test_idx_warm = idx
-            if best_test_upon_valid_cold[val_metric] > best_test_value_cold:
-                best_test_value_cold = best_test_upon_valid_cold[val_metric]
-                best_test_idx_cold = idx
+            # Select hyper-parameters using validation results only.
+            if config.get("warm_eval", False) and _is_better_validation_score(
+                    best_valid_score_warm, best_valid_value_warm, config['valid_metric_bigger']):
+                best_valid_value_warm = best_valid_score_warm
+                best_valid_idx_warm = idx
+            if config.get("cold_start_eval", False) and _is_better_validation_score(
+                    best_valid_score_cold, best_valid_value_cold, config['valid_metric_bigger']):
+                best_valid_value_cold = best_valid_score_cold
+                best_valid_idx_cold = idx
             idx += 1
 
             logger.info("\n" + "=" * 100)
@@ -132,18 +140,18 @@ def quick_start(model, dataset, domains, save_model=True):
                             f"{metrics_dict2str(best_test_upon_valid_cold)}")
 
             logger.info(f"\n{'█' * 10} Current BEST (per enabled evaluation mode) {'█' * 10}")
-            if config.get("warm_eval", False) and best_test_idx_warm is not None:
+            if config.get("warm_eval", False) and best_valid_idx_warm is not None:
                 logger.info(f"\n🏆 Warm Evaluation:")
                 logger.info(f"📊 Best Hyper-parameters: {config['hyper_parameters']} = "
-                            f"{hyper_ret[best_test_idx_warm][0]}")
-                logger.info(f"   Valid:\n{metrics_dict2str(hyper_ret[best_test_idx_warm][1])}")
-                logger.info(f"   Test:\n{metrics_dict2str(hyper_ret[best_test_idx_warm][2])}")
-            if config.get("cold_start_eval", False) and best_test_idx_cold is not None:
+                            f"{hyper_ret[best_valid_idx_warm][0]}")
+                logger.info(f"   Valid:\n{metrics_dict2str(hyper_ret[best_valid_idx_warm][1])}")
+                logger.info(f"   Test:\n{metrics_dict2str(hyper_ret[best_valid_idx_warm][2])}")
+            if config.get("cold_start_eval", False) and best_valid_idx_cold is not None:
                 logger.info(f"\n🏆 Cold Evaluation:")
                 logger.info(f"📊 Best Hyper-parameters: {config['hyper_parameters']} = "
-                            f"{hyper_ret[best_test_idx_cold][0]}")
-                logger.info(f"   Valid:\n{metrics_dict2str(hyper_ret[best_test_idx_cold][3])}")
-                logger.info(f"   Test:\n{metrics_dict2str(hyper_ret[best_test_idx_cold][4])}")
+                            f"{hyper_ret[best_valid_idx_cold][0]}")
+                logger.info(f"   Valid:\n{metrics_dict2str(hyper_ret[best_valid_idx_cold][3])}")
+                logger.info(f"   Test:\n{metrics_dict2str(hyper_ret[best_valid_idx_cold][4])}")
 
     # log info
     logger.info('\n============ All Over ============\n')
@@ -162,24 +170,24 @@ def quick_start(model, dataset, domains, save_model=True):
         logger.info('-' * 100)
 
     logger.info('\n\n█████████████ BEST RESULTS (per enabled evaluation mode) ████████████████')
-    if config.get("warm_eval", False) and best_test_idx_warm is not None:
+    if config.get("warm_eval", False) and best_valid_idx_warm is not None:
         logger.info(f"\n🏆 Warm Evaluation:")
         logger.info(f"📊 Best Parameters: {config['hyper_parameters']} = "
-                    f"{hyper_ret[best_test_idx_warm][0]}")
+                    f"{hyper_ret[best_valid_idx_warm][0]}")
         logger.info("   Valid:\n"
-                    f"{metrics_dict2str(hyper_ret[best_test_idx_warm][1], indent=8)}")
+                    f"{metrics_dict2str(hyper_ret[best_valid_idx_warm][1], indent=8)}")
         logger.info("   Test:\n"
-                    f"{metrics_dict2str(hyper_ret[best_test_idx_warm][2], indent=8)}")
+                    f"{metrics_dict2str(hyper_ret[best_valid_idx_warm][2], indent=8)}")
     else:
         logger.info("\n🏆 Warm Evaluation: Disabled or No Record")
-    if config.get("cold_start_eval", False) and best_test_idx_cold is not None:
+    if config.get("cold_start_eval", False) and best_valid_idx_cold is not None:
         logger.info(f"\n🏆 Cold Evaluation:")
         logger.info(f"📊 Best Parameters: {config['hyper_parameters']} = "
-                    f"{hyper_ret[best_test_idx_cold][0]}")
+                    f"{hyper_ret[best_valid_idx_cold][0]}")
         logger.info("   Valid:\n"
-                    f"{metrics_dict2str(hyper_ret[best_test_idx_cold][3], indent=8)}")
+                    f"{metrics_dict2str(hyper_ret[best_valid_idx_cold][3], indent=8)}")
         logger.info("   Test:\n"
-                    f"{metrics_dict2str(hyper_ret[best_test_idx_cold][4], indent=8)}")
+                    f"{metrics_dict2str(hyper_ret[best_valid_idx_cold][4], indent=8)}")
     else:
         logger.info("\n🏆 Cold Evaluation: Disabled or No Record")
 

@@ -1,0 +1,50 @@
+{
+  "reviewer": "AI_assistant",
+  "cases": 50,
+  "role_outputs": 200,
+  "expert_gold_labels": false,
+  "hidden_target_labels_used": false,
+  "roles": {
+    "semantic": {
+      "reviewed": 50,
+      "confirmed_evidence_error_outputs": 4,
+      "inference_or_criteria_concern_outputs": 7,
+      "statuses": {
+        "needs_criteria_review": 7,
+        "no_specific_error_found": 39,
+        "confirmed_evidence_error": 4
+      }
+    },
+    "collaborative": {
+      "reviewed": 50,
+      "confirmed_evidence_error_outputs": 11,
+      "inference_or_criteria_concern_outputs": 0,
+      "statuses": {
+        "confirmed_evidence_error": 11,
+        "no_specific_error_found": 39
+      }
+    },
+    "overlap": {
+      "reviewed": 50,
+      "confirmed_evidence_error_outputs": 0,
+      "inference_or_criteria_concern_outputs": 3,
+      "statuses": {
+        "no_specific_error_found": 47,
+        "needs_criteria_review": 3
+      }
+    },
+    "popularity_bias": {
+      "reviewed": 50,
+      "confirmed_evidence_error_outputs": 9,
+      "inference_or_criteria_concern_outputs": 40,
+      "statuses": {
+        "needs_criteria_review": 31,
+        "no_specific_error_found": 10,
+        "confirmed_evidence_error": 9
+      }
+    }
+  },
+  "annotation_source_sha256": "c57c76d5c6a69f2439e65d8321eac9dfb91fdb0d9f6823208655a4683b10bc1f",
+  "completed_at": "2026-10-06T03:28:43.559142+00:00",
+  "notes": "purposive cases; provisional references not universal thresholds; no specific error found is not correctness"
+}

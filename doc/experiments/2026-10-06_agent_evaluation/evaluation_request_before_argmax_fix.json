@@ -1,0 +1,39 @@
+{
+  "input_sha256": "dcd24afa46e9729d3584410c3b087d88848b669556e7d1178c01040255d8a48e",
+  "feedback_sha256": "a787f4530501a01ea48fdc6f767da67073c286dbf5360776b50835625c07c2be",
+  "script_sha256": "38942fef7b665cc5180cb036915e954e69b5a1d5426046f8d0e13ea34ec479d5",
+  "review_users": [
+    42,
+    1365,
+    1773,
+    1991,
+    2174
+  ],
+  "group": "prompt_dev",
+  "source_version": "v2",
+  "feedback_read_policy": "internal_prompt_dev_only;prompt_val_and_formal_evaluation_unread",
+  "purpose": "exploratory_development_diagnostics;not_final_accuracy_or_recommendation_performance",
+  "review_type": "AI_assistant_evidence_review;not_independent_human_gold_labels",
+  "sampling": "purposive_five_users_frozen_before_target_match_computation",
+  "ranking": "score_desc_then_target_item_id_asc",
+  "top_k": 5,
+  "descriptive_label_groups": [
+    "A",
+    "B",
+    "C",
+    "A_or_B"
+  ],
+  "selection_rules": [
+    "A_only",
+    "A_or_B",
+    "pA_top5_per_user",
+    "pA_minus_pC_top5_per_user",
+    "g_top5_per_user",
+    "semantic_top5_per_user",
+    "multi_role_A_count_at_least2",
+    "multi_role_AB_count_at_least3",
+    "all_four_nonC",
+    "all_four_A"
+  ],
+  "nonmatch_meaning": "not_observed_in_hidden_target_history;not_dislike_or_ABC_C_gold"
+}

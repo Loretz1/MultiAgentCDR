@@ -1,0 +1,13 @@
+{
+  "state": "passed",
+  "archive_sha256": "97732de61b3e160045fbc7067fc1cc5c18ab35ebe5dac871cf888dd3c1627154",
+  "archive_bytes": 274110025,
+  "verified_file_count": 80,
+  "pairs": 200,
+  "users": 20,
+  "judgments": 800,
+  "verified_local_time": "2026-10-06 10:45:58",
+  "complete_input_output": true,
+  "probabilities_confidence_recomputed": true,
+  "executed_sources_in_archive": true
+}

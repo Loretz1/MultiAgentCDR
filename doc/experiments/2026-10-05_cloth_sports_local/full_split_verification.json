@@ -1,0 +1,9 @@
+{
+  "hidden_users_absent_from_visible_target_training": true,
+  "fold_covers_training_overlap": true,
+  "hidden_history_and_visible_history_partition_full_training": true,
+  "formal_cold_users_absent_from_target_training_by_raw_identity": true,
+  "training_overlap_users": 3128,
+  "visible_target_interactions": 274027,
+  "hidden_target_interactions": 13867
+}

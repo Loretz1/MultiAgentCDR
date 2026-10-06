@@ -1,0 +1,40 @@
+{
+  "state": "partial",
+  "request": {
+    "input_sha256": "dcd24afa46e9729d3584410c3b087d88848b669556e7d1178c01040255d8a48e",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+    "prompt_version": "four_evidence_v5_short_reason",
+    "workers": 4,
+    "min_label_mass": 0.5,
+    "collector_source_sha256": "fd2aa9b3a3444ab9907511f96ce09c8baf97579fc148f69db1a21b6605db164a",
+    "prompt_source_sha256": "4660a05ae14660847656e72e52320f850299eab2b880322da0c0d9ced3b82408",
+    "scope": "same_v4_reasoning_and_label_requests;pair_parallelism_only"
+  },
+  "completed": 196,
+  "expected": 200,
+  "failures": [
+    {
+      "pair_id": "cloth_sports:prompt_dev:42:13517",
+      "error": "timed out",
+      "type": "ReadTimeout"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:42:14061",
+      "error": "timed out",
+      "type": "ReadTimeout"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:42:15483",
+      "error": "timed out",
+      "type": "ReadTimeout"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:42:14060",
+      "error": "timed out",
+      "type": "ReadTimeout"
+    }
+  ],
+  "elapsed_seconds": 355.893,
+  "output_sha256": "3161388627aad41460313e90fa69b0f9bcdd52d7a74abb2cd640027f5c2999f7",
+  "output_order": "completion_order;join_by_pair_id"
+}

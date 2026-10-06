@@ -1,0 +1,120 @@
+{
+  "state": "partial",
+  "request": {
+    "input_sha256": "dcd24afa46e9729d3584410c3b087d88848b669556e7d1178c01040255d8a48e",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+    "prompt_version": "four_evidence_v4_two_stage",
+    "workers": 4,
+    "min_label_mass": 0.5,
+    "collector_source_sha256": "b7083b4472c3db49e543884cc796b4d248e0e87774da12aa064e85ef45b40bed",
+    "prompt_source_sha256": "4660a05ae14660847656e72e52320f850299eab2b880322da0c0d9ced3b82408",
+    "scope": "same_v4_reasoning_and_label_requests;pair_parallelism_only"
+  },
+  "completed": 180,
+  "expected": 200,
+  "failures": [
+    {
+      "pair_id": "cloth_sports:prompt_dev:42:14060",
+      "error": "semantic: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:42:15483",
+      "error": "popularity_bias: reasoning hit the token limit",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:588:37",
+      "error": "semantic: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1397:1061",
+      "error": "semantic: reasoning hit the token limit",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1397:7047",
+      "error": "popularity_bias: reasoning hit the token limit",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1397:2949",
+      "error": "semantic: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1397:1009",
+      "error": "collaborative: reasoning hit the token limit",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1530:10692",
+      "error": "semantic: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1644:625",
+      "error": "collaborative: reasoning hit the token limit",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1644:1045",
+      "error": "popularity_bias: reasoning hit the token limit",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1644:2456",
+      "error": "popularity_bias: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1644:1178",
+      "error": "popularity_bias: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1773:1371",
+      "error": "popularity_bias: reasoning hit the token limit",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1773:9068",
+      "error": "semantic: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1865:12607",
+      "error": "semantic: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1921:2456",
+      "error": "semantic: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1991:6506",
+      "error": "semantic: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:2174:732",
+      "error": "collaborative: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:2481:15687",
+      "error": "collaborative: reasoning hit the token limit",
+      "type": "PipelineError"
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:2652:737",
+      "error": "popularity_bias: malformed reasoning (expected one short sentence)",
+      "type": "PipelineError"
+    }
+  ],
+  "elapsed_seconds": 189.807,
+  "output_sha256": "1404b4cdc4bb3ba13c10c21aa97a69514740b4eb840b4f41e629a3b174af67a4",
+  "output_order": "completion_order;join_by_pair_id"
+}

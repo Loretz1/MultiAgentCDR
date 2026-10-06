@@ -1,0 +1,154 @@
+{
+  "schema_version": "cloth_sports_cpu_v1",
+  "created_at_utc": "2026-10-06T00:45:05.873096+00:00",
+  "domains": {
+    "src": "Clothing_Shoes_and_Jewelry",
+    "tgt": "Sports_and_Outdoors"
+  },
+  "config": {
+    "t_cold_valid": 0.1,
+    "t_cold_test": 0.1,
+    "warm_valid_ratio": 0,
+    "warm_test_ratio": 0,
+    "shuffle_user_sequence": true,
+    "only_overlap_users": false
+  },
+  "raw_reviews": {
+    "src": {
+      "users": 39387,
+      "items": 23033,
+      "interactions": 278677,
+      "rating_counts": {
+        "5.0": 163240,
+        "4.0": 58357,
+        "3.0": 30425,
+        "1.0": 11192,
+        "2.0": 15463
+      },
+      "rating_groups": {
+        "positive": 221597,
+        "neutral": 30425,
+        "negative": 26655
+      },
+      "duplicate_user_item_rows": 0,
+      "review_text_missing": 24,
+      "review_summary_missing": 0,
+      "minimum_unix_review_time": 1048896000,
+      "maximum_unix_review_time": 1406073600
+    },
+    "tgt": {
+      "users": 35598,
+      "items": 18357,
+      "interactions": 296337,
+      "rating_counts": {
+        "5.0": 188208,
+        "4.0": 64809,
+        "3.0": 24071,
+        "2.0": 10204,
+        "1.0": 9045
+      },
+      "rating_groups": {
+        "positive": 253017,
+        "neutral": 24071,
+        "negative": 19249
+      },
+      "duplicate_user_item_rows": 0,
+      "review_text_missing": 123,
+      "review_summary_missing": 0,
+      "minimum_unix_review_time": 1015459200,
+      "maximum_unix_review_time": 1406073600
+    }
+  },
+  "benchmark_user_groups": {
+    "overlap_users": 3128,
+    "valid_cold_users": 390,
+    "test_cold_users": 390,
+    "src_only_users": 35479,
+    "tgt_only_users": 31690
+  },
+  "benchmark_interactions": {
+    "train_src": 278677,
+    "train_tgt": 287894,
+    "valid_cold_tgt": 4373,
+    "test_cold_tgt": 4070,
+    "valid_warm_tgt": 0,
+    "test_warm_tgt": 0
+  },
+  "internal_user_groups": {
+    "support": 1878,
+    "prompt_dev": 625,
+    "prompt_val": 625
+  },
+  "shared_asins_between_domains": 704,
+  "metadata": {
+    "src": {
+      "metadata_records_scanned": 1503384,
+      "retained_5core_items": 23033,
+      "metadata_found": 23033,
+      "metadata_missing": 0,
+      "duplicate_relevant_metadata_rows": 0,
+      "title_missing": 23,
+      "description_missing": 21614,
+      "text_empty": 0
+    },
+    "tgt": {
+      "metadata_records_scanned": 532197,
+      "retained_5core_items": 18357,
+      "metadata_found": 18357,
+      "metadata_missing": 0,
+      "duplicate_relevant_metadata_rows": 0,
+      "title_missing": 90,
+      "description_missing": 2661,
+      "text_empty": 0
+    }
+  },
+  "review_sidecar_rows": {
+    "train_src": 278677,
+    "train_tgt": 287894,
+    "visible_tgt": 274027,
+    "test_cold": 4070,
+    "prompt_val": 7019,
+    "prompt_dev": 6848,
+    "valid_cold": 4373
+  },
+  "source_profiles": 39387,
+  "popularity": {
+    "full": {
+      "interactions": 287894,
+      "users": 34818,
+      "observed_items": 18357,
+      "catalog_items": 18357
+    },
+    "prompt": {
+      "interactions": 274027,
+      "users": 33568,
+      "observed_items": 18357,
+      "catalog_items": 18357
+    }
+  },
+  "checks": {
+    "original_benchmark_functions_used": true,
+    "benchmark_cold_raw_users_absent_from_target_train": true,
+    "all_original_review_rows_preserved": true,
+    "prompt_hidden_users_absent_from_visible_target_train": true,
+    "profiles_source_train_only_and_candidate_blind": true,
+    "metadata_behavior_fields_excluded": true,
+    "full_and_fold_popularity_computed_separately": true
+  },
+  "limitations": [
+    "No semantic embeddings, G model, nearest neighbors, candidate lists, agent labels or confidence have been generated.",
+    "Internal prompt groups are a single deterministic user split; no cross-fitting has run.",
+    "Positive/negative ratings label source review sentiment only; benchmark interactions are unchanged.",
+    "Static metadata is not timestamped; the benchmark is an offline non-temporal protocol.",
+    "Hidden feedback contains observed interactions, not role-specific A/B/C gold labels.",
+    "Raw single-domain IDs remain domain-specific; benchmark cold labels use source-space user IDs."
+  ],
+  "stage_seconds": {
+    "load_reviews": 4.673,
+    "benchmark_and_internal_splits": 2.668,
+    "static_catalogs": 202.852,
+    "sidecars_profiles_and_statistics": 15.832,
+    "raw_checksums": 0.476
+  },
+  "elapsed_seconds": 226.501
+}

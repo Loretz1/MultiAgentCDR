@@ -1,0 +1,5 @@
+# Preserve original bytes: experiment manifests record SHA256 hashes.
+# Archived logs and prompt examples intentionally retain their whitespace.
+/doc/experiments/** -text -whitespace
+/scripts/** -text whitespace=cr-at-eol
+/tests/** -text whitespace=cr-at-eol

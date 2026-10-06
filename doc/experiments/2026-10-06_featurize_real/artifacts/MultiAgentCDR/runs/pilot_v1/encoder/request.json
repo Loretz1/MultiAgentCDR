@@ -1,0 +1,13 @@
+{
+  "kind": "bge_text",
+  "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+  "config": {
+    "model": "BAAI/bge-base-en-v1.5",
+    "revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+    "batch_size": 64,
+    "max_seq_length": 512,
+    "device": "cuda",
+    "aggregation": "latest_positive_rating_minus_3_v1",
+    "implementation_sha256": "0d5992cc8b01d51c96c683c15edbc1376f100164aa6b5a621b0e62e4bd6c654c"
+  }
+}

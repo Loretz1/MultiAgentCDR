@@ -1,0 +1,63 @@
+{
+  "state": "complete",
+  "completed_at": "2026-10-06T01:49:02.623350+00:00",
+  "request": {
+    "kind": "agent_inputs",
+    "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+    "config": {
+      "seed": 999,
+      "group": "prompt_dev",
+      "user_limit": 20,
+      "candidates_per_user": 10,
+      "recall_per_method": 50,
+      "rrf_constant": 60,
+      "source_neighbors": 20,
+      "target_neighbors": 20,
+      "history_evidence_limit": 5,
+      "support_examples_limit": 5,
+      "bias_prior_strength": 10,
+      "encoder_sha256": "fe81b09c9ca562df3821e3834dd780dbb324c9700a4d5eb9c103174fada64257",
+      "g_sha256": "5566790f3ad5c28406252a52dc6a129a1c2794b9654884a2ee241b429fed9710",
+      "evidence_schema": "four_evidence_train_v1",
+      "implementation_sha256": "5df4f8f6f67b7492890189b638dc7424ae2978cc02ee6ba9e17e1801be3ee95d"
+    }
+  },
+  "files": {
+    "agent_inputs.jsonl": {
+      "sha256": "dcd24afa46e9729d3584410c3b087d88848b669556e7d1178c01040255d8a48e",
+      "bytes": 1227194
+    },
+    "candidate_trace.jsonl": {
+      "sha256": "9e5de58259387f1ae0c91a574a123d0ef0afc08e234da83451a48a0b4bd3bf4f",
+      "bytes": 38740
+    }
+  },
+  "users": [
+    42,
+    408,
+    567,
+    588,
+    781,
+    1365,
+    1397,
+    1530,
+    1644,
+    1773,
+    1865,
+    1921,
+    1991,
+    2174,
+    2204,
+    2441,
+    2481,
+    2652,
+    2930,
+    3013
+  ],
+  "records": 200,
+  "hidden_feedback_read": false,
+  "scope": "prompt_visible_only",
+  "gold_candidate_insertion": false,
+  "role_isolation": "collector_adds_only_requested_role_evidence",
+  "tie_break": "score_desc_item_id_asc"
+}

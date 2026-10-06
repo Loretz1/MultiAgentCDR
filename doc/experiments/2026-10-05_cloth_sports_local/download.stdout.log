@@ -1,0 +1,27 @@
+Downloading meta_Clothing_Shoes_and_Jewelry.json.gz from 0/280989093 bytes
+Downloading reviews_Sports_and_Outdoors_5.json.gz from 0/68275834 bytes
+Downloading reviews_Clothing_Shoes_and_Jewelry_5.json.gz from 0/47285200 bytes
+Downloading meta_Sports_and_Outdoors.json.gz from 0/183143051 bytes
+Complete reviews_Clothing_Shoes_and_Jewelry_5.json.gz: 47285200 bytes, SHA256 b87037787e9d5374ce72995a29ac192cde1573513c31abfd4ca7781d802b1e22
+Attempt 1 failed for meta_Sports_and_Outdoors.json.gz: ('Connection broken: IncompleteRead(50495488 bytes read, 132647563 more expected)', IncompleteRead(50495488 bytes read, 132647563 more expected))Attempt 1 failed for reviews_Sports_and_Outdoors_5.json.gz: ('Connection broken: IncompleteRead(50757632 bytes read, 17518202 more expected)', IncompleteRead(50757632 bytes read, 17518202 more expected))
+
+Attempt 1 failed for meta_Clothing_Shoes_and_Jewelry.json.gz: ('Connection broken: IncompleteRead(48201728 bytes read, 232787365 more expected)', IncompleteRead(48201728 bytes read, 232787365 more expected))
+Downloading meta_Clothing_Shoes_and_Jewelry.json.gz from 47185920/280989093 bytesDownloading meta_Sports_and_Outdoors.json.gz from 50331648/183143051 bytes
+
+Downloading reviews_Sports_and_Outdoors_5.json.gz from 50331648/68275834 bytes
+Complete reviews_Sports_and_Outdoors_5.json.gz: 68275834 bytes, SHA256 8130a2206c3062db1b4b9d4353efc303b0ebd13f48372559fee26c47a1d7fe51
+Attempt 2 failed for meta_Sports_and_Outdoors.json.gz: ('Connection broken: IncompleteRead(106692608 bytes read, 26118795 more expected)', IncompleteRead(106692608 bytes read, 26118795 more expected))
+Attempt 2 failed for meta_Clothing_Shoes_and_Jewelry.json.gz: ('Connection broken: IncompleteRead(107675648 bytes read, 126127525 more expected)', IncompleteRead(107675648 bytes read, 126127525 more expected))
+Attempt 3 failed for meta_Clothing_Shoes_and_Jewelry.json.gz: HTTPSConnectionPool(host='snap.stanford.edu', port=443): Max retries exceeded with url: /data/amazon/productGraph/categoryFiles/meta_Clothing_Shoes_and_Jewelry.json.gz (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))Attempt 3 failed for meta_Sports_and_Outdoors.json.gz: HTTPSConnectionPool(host='snap.stanford.edu', port=443): Max retries exceeded with url: /data/amazon/productGraph/categoryFiles/meta_Sports_and_Outdoors.json.gz (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
+
+Attempt 4 failed for meta_Clothing_Shoes_and_Jewelry.json.gz: HTTPSConnectionPool(host='snap.stanford.edu', port=443): Read timed out. (read timeout=15)
+Downloading meta_Sports_and_Outdoors.json.gz from 156237824/183143051 bytes
+Downloading meta_Clothing_Shoes_and_Jewelry.json.gz from 154140672/280989093 bytes
+Verified existing reviews_Clothing_Shoes_and_Jewelry_5.json.gz: 47285200 bytes
+Verified existing reviews_Sports_and_Outdoors_5.json.gz: 68275834 bytes
+Downloading meta_Sports_and_Outdoors.json.gz from 158334976/183143051 bytes
+Downloading meta_Clothing_Shoes_and_Jewelry.json.gz from 155189248/280989093 bytes
+Complete meta_Sports_and_Outdoors.json.gz: 183143051 bytes, SHA256 677108a0fe0f47cce08885a348879a5a89dd69e75fbc5d66410ae436750df086
+Attempt 1 failed for meta_Clothing_Shoes_and_Jewelry.json.gz: ("Connection broken: ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)", ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Downloading meta_Clothing_Shoes_and_Jewelry.json.gz from 211812352/280989093 bytes
+Complete meta_Clothing_Shoes_and_Jewelry.json.gz: 280989093 bytes, SHA256 5c3eb997cae891aeb646acaa05550b927cb205e5a3ead9d771d3f529110009c0

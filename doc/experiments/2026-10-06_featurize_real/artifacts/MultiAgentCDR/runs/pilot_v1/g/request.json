@@ -1,0 +1,21 @@
+{
+  "kind": "emcdr_g",
+  "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+  "config": {
+    "seed": 999,
+    "feature_dim": 64,
+    "mlp_layers": 0,
+    "mlp_hidden_dim": 128,
+    "dropout": 0.2,
+    "source_epochs": 10,
+    "target_epochs": 10,
+    "mapping_epochs": 1000,
+    "source_lr": 0.01,
+    "target_lr": 0.01,
+    "mapping_lr": 0.001,
+    "batch_size": 2048,
+    "device": "cuda",
+    "baseline_sha256": "44f5ca8ca0f0247b3d94aa76cb0bcfdf8142f45b3f4f49091080e47ca9001889",
+    "implementation_sha256": "be35869110ae16f3b4ea96463f02a01343d6c70488ea2748646a7851e46471f9"
+  }
+}

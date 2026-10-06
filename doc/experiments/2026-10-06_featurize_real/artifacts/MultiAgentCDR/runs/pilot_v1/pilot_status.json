@@ -1,0 +1,8 @@
+{
+  "state": "complete",
+  "prompt_version": "four_evidence_v5_short_reason",
+  "pairs": 200,
+  "judgments": 800,
+  "updated_unix": 1791254534.6083994,
+  "feedback_sha256": "a787f4530501a01ea48fdc6f767da67073c286dbf5360776b50835625c07c2be"
+}

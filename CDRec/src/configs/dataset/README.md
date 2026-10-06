@@ -17,3 +17,6 @@
   8. t_cold_valid：重叠用户中划分出valid冷用户的比例
   9. t_cold_test：重叠用户中划分出test冷用户的比例
   10. 其它自定义模态处理时需要的配置，如：openai_api_key、openai_base_url等
+## API 凭据
+
+版本库中的 `openai_api_key` 保持为空。需要调用闭源 API 时，通过 `Config(..., config_dict={"openai_api_key": ...})` 注入本地凭据，不要将密钥写入可提交的 YAML、脚本或日志。项目根目录的 `.env*` 和 `.codex_tools/` 已被忽略；`.env` 不会被 Benchmark 自动读取。

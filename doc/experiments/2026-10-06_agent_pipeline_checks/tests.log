@@ -1,0 +1,19 @@
+{"users": 1, "pairs": 2, "output": "C:\\Users\\Faust\\AppData\\Local\\Temp\\tmpt513wpi_\\output"}
+{"users": 1, "pairs": 2, "output": "C:\\Users\\Faust\\AppData\\Local\\Temp\\tmpt513wpi_\\output2"}
+{"users": 1, "pairs": 2, "output": "C:\\Users\\Faust\\AppData\\Local\\Temp\\tmpt513wpi_\\val"}
+test_actual_emcdr_cpu_to_four_role_payload (test_agent_evidence_pipeline.PipelineTests.test_actual_emcdr_cpu_to_four_role_payload) ... ok
+test_artifact_tampering_and_stale_split_rejected (test_agent_evidence_pipeline.PipelineTests.test_artifact_tampering_and_stale_split_rejected) ... ok
+test_cache_refuses_changed_config (test_agent_evidence_pipeline.PipelineTests.test_cache_refuses_changed_config) ... ok
+test_domain_numeric_collision_and_hidden_isolation (test_agent_evidence_pipeline.PipelineTests.test_domain_numeric_collision_and_hidden_isolation) ... ok
+test_encoder_contract_same_model_and_missing_text (test_agent_evidence_pipeline.PipelineTests.test_encoder_contract_same_model_and_missing_text) ... ok
+test_hidden_target_leak_fails_even_if_manifest_updated (test_agent_evidence_pipeline.PipelineTests.test_hidden_target_leak_fails_even_if_manifest_updated) ... ok
+test_literal_concept_provenance (test_agent_evidence_pipeline.PipelineTests.test_literal_concept_provenance) ... ok
+test_negative_sampler_no_padding_no_observed_items (test_agent_evidence_pipeline.PipelineTests.test_negative_sampler_no_padding_no_observed_items) ... ok
+test_positive_aggregation_and_latest_negative (test_agent_evidence_pipeline.PipelineTests.test_positive_aggregation_and_latest_negative) ... ok
+test_recall_ties_dedup_and_missing_semantics (test_agent_evidence_pipeline.PipelineTests.test_recall_ties_dedup_and_missing_semantics) ... ok
+test_support_union_denominators_and_no_neighbors (test_agent_evidence_pipeline.PipelineTests.test_support_union_denominators_and_no_neighbors) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.539s
+
+OK

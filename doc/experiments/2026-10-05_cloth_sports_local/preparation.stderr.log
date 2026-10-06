@@ -1,0 +1,40 @@
+2026-10-06 08:45:05,873 INFO Loading compact review records
+2026-10-06 08:45:06,546 INFO Read reviews_Clothing_Shoes_and_Jewelry_5.json.gz: 100,000 records
+2026-10-06 08:45:07,211 INFO Read reviews_Clothing_Shoes_and_Jewelry_5.json.gz: 200,000 records
+2026-10-06 08:45:08,614 INFO Read reviews_Sports_and_Outdoors_5.json.gz: 100,000 records
+2026-10-06 08:45:09,464 INFO Read reviews_Sports_and_Outdoors_5.json.gz: 200,000 records
+2026-10-06 08:45:10,545 INFO Stage complete: load_reviews (4.7 seconds)
+2026-10-06 08:45:10,547 INFO Building exact benchmark mappings and splits
+2026-10-06 08:45:11,507 INFO [DATASET] Saving user splitting and id mapping...
+2026-10-06 08:45:12,628 INFO [DATASET] Interaction Splitting finished and saved.
+2026-10-06 08:45:13,213 INFO Stage complete: benchmark_and_internal_splits (2.7 seconds)
+2026-10-06 08:45:13,214 INFO Streaming metadata; retaining only 5-core catalog items
+2026-10-06 08:45:22,006 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 100,000 records
+2026-10-06 08:45:30,339 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 200,000 records
+2026-10-06 08:45:38,725 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 300,000 records
+2026-10-06 08:45:47,218 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 400,000 records
+2026-10-06 08:45:55,848 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 500,000 records
+2026-10-06 08:46:06,567 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 600,000 records
+2026-10-06 08:46:18,045 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 700,000 records
+2026-10-06 08:46:28,888 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 800,000 records
+2026-10-06 08:46:39,375 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 900,000 records
+2026-10-06 08:46:48,876 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 1,000,000 records
+2026-10-06 08:47:00,248 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 1,100,000 records
+2026-10-06 08:47:10,941 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 1,200,000 records
+2026-10-06 08:47:22,401 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 1,300,000 records
+2026-10-06 08:47:33,624 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 1,400,000 records
+2026-10-06 08:47:44,675 INFO Read meta_Clothing_Shoes_and_Jewelry.json.gz: 1,500,000 records
+2026-10-06 08:47:54,651 INFO Read meta_Sports_and_Outdoors.json.gz: 100,000 records
+2026-10-06 08:48:03,689 INFO Read meta_Sports_and_Outdoors.json.gz: 200,000 records
+2026-10-06 08:48:12,729 INFO Read meta_Sports_and_Outdoors.json.gz: 300,000 records
+2026-10-06 08:48:21,989 INFO Read meta_Sports_and_Outdoors.json.gz: 400,000 records
+2026-10-06 08:48:32,352 INFO Read meta_Sports_and_Outdoors.json.gz: 500,000 records
+2026-10-06 08:48:36,065 INFO Stage complete: static_catalogs (202.9 seconds)
+2026-10-06 08:48:37,653 INFO Read reviews_Clothing_Shoes_and_Jewelry_5.json.gz: 100,000 records
+2026-10-06 08:48:39,229 INFO Read reviews_Clothing_Shoes_and_Jewelry_5.json.gz: 200,000 records
+2026-10-06 08:48:43,141 INFO Read reviews_Sports_and_Outdoors_5.json.gz: 100,000 records
+2026-10-06 08:48:45,865 INFO Read reviews_Sports_and_Outdoors_5.json.gz: 200,000 records
+2026-10-06 08:48:51,897 INFO Stage complete: sidecars_profiles_and_statistics (15.8 seconds)
+2026-10-06 08:48:51,900 INFO Hashing raw inputs and writing final audit
+2026-10-06 08:48:52,373 INFO Stage complete: raw_checksums (0.5 seconds)
+2026-10-06 08:48:52,379 INFO Preparation complete in 226.5 seconds; audit: F:\Projects\MultiAgentCDR\doc\experiments\2026-10-05_cloth_sports_local\audit.md

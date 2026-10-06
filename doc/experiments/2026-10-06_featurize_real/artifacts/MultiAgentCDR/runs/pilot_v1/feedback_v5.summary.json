@@ -1,0 +1,19 @@
+{
+  "state": "complete",
+  "request": {
+    "input_sha256": "dcd24afa46e9729d3584410c3b087d88848b669556e7d1178c01040255d8a48e",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+    "prompt_version": "four_evidence_v5_short_reason",
+    "workers": 4,
+    "min_label_mass": 0.5,
+    "collector_source_sha256": "fd2aa9b3a3444ab9907511f96ce09c8baf97579fc148f69db1a21b6605db164a",
+    "prompt_source_sha256": "4660a05ae14660847656e72e52320f850299eab2b880322da0c0d9ced3b82408",
+    "scope": "same_v4_reasoning_and_label_requests;pair_parallelism_only"
+  },
+  "completed": 200,
+  "expected": 200,
+  "failures": [],
+  "elapsed_seconds": 359.654,
+  "output_sha256": "a787f4530501a01ea48fdc6f767da67073c286dbf5360776b50835625c07c2be",
+  "output_order": "completion_order;join_by_pair_id"
+}

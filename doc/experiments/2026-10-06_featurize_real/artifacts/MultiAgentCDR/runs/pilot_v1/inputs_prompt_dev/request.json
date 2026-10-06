@@ -1,0 +1,21 @@
+{
+  "kind": "agent_inputs",
+  "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+  "config": {
+    "seed": 999,
+    "group": "prompt_dev",
+    "user_limit": 20,
+    "candidates_per_user": 10,
+    "recall_per_method": 50,
+    "rrf_constant": 60,
+    "source_neighbors": 20,
+    "target_neighbors": 20,
+    "history_evidence_limit": 5,
+    "support_examples_limit": 5,
+    "bias_prior_strength": 10,
+    "encoder_sha256": "fe81b09c9ca562df3821e3834dd780dbb324c9700a4d5eb9c103174fada64257",
+    "g_sha256": "5566790f3ad5c28406252a52dc6a129a1c2794b9654884a2ee241b429fed9710",
+    "evidence_schema": "four_evidence_train_v1",
+    "implementation_sha256": "5df4f8f6f67b7492890189b638dc7424ae2978cc02ee6ba9e17e1801be3ee95d"
+  }
+}

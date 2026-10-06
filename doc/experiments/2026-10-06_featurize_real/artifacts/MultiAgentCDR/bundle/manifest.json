@@ -1,0 +1,54 @@
+{
+  "state": "complete",
+  "completed_at": "2026-10-06T01:23:33.272736+00:00",
+  "request": {
+    "kind": "portable_bundle",
+    "bundle_sha256": "f07a2589585aa1941690f8db1b35172868030ffa0409969d68f29b6ebece129c",
+    "config": {
+      "policy": "prompt_visible_only_v1"
+    }
+  },
+  "files": {
+    "interactions.npz": {
+      "sha256": "cbad94ac449b7670bab0c2b5dde26343a8928314e1a98d862fb238da17ff85a9",
+      "bytes": 1604581
+    },
+    "groups.json": {
+      "sha256": "d999088ebe0b538f674817428d3279bfab73709663a2cc5c3b445b692c810b9f",
+      "bytes": 33801
+    },
+    "id_mapping.json": {
+      "sha256": "d4d7bd3fdd19c6781baf983af5e6b9cb9a0505e7774282541cff983c7f6798b4",
+      "bytes": 6176462
+    },
+    "source_profiles.jsonl": {
+      "sha256": "b46db35cafdcbaee44c7f316001f5f5b1e81ecc09f850acfbd0ab2f2a913f824",
+      "bytes": 174865936
+    },
+    "source_catalog.jsonl": {
+      "sha256": "cdeebe28c70fb2801d564b85294b440a42c7885b1f187ded09839660e4cef55c",
+      "bytes": 18052334
+    },
+    "target_catalog.jsonl": {
+      "sha256": "92f47fb44dabd5688b071beae3e689bcb624632e62c41993637f79ac71d04e12",
+      "bytes": 29410369
+    }
+  },
+  "schema": "agent_bundle_v1",
+  "origin_manifest_sha256": "f07a2589585aa1941690f8db1b35172868030ffa0409969d68f29b6ebece129c",
+  "counts": {
+    "source_users": 39387,
+    "target_users": 34818,
+    "source_items": 23033,
+    "target_items": 18357,
+    "source_interactions": 278677,
+    "target_interactions": 284523
+  },
+  "omitted": [
+    "hidden_feedback",
+    "benchmark_evaluation",
+    "full_target_history",
+    "raw_files",
+    "credentials"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "kind": "portable_bundle",
+  "bundle_sha256": "f07a2589585aa1941690f8db1b35172868030ffa0409969d68f29b6ebece129c",
+  "config": {
+    "policy": "prompt_visible_only_v1"
+  }
+}

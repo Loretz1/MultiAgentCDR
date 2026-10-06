@@ -1,0 +1,57 @@
+{
+  "verified_by": "Notion_connector_write_then_fetch;not_browser_visual_verification",
+  "pages": [
+    {
+      "title": "Cloth→Sports Agent证据与筛选评估（2026-10-06）",
+      "url": "https://app.notion.com/p/3f16864168f581d0b3a8cb1977dc6a4e?pvs=204",
+      "last_edited_at": "2026-10-06T03:37:21.955Z",
+      "checks": {
+        "complete": true,
+        "tables": true,
+        "different_asin": true,
+        "confidence": true,
+        "original_examples": true,
+        "attachments": true,
+        "no_pending": true,
+        "role_summary": true,
+        "protocol": true,
+        "unknown_blocks": 0,
+        "truncated": false
+      }
+    },
+    {
+      "title": "Cloth→Sports 离线输入准备",
+      "url": "https://app.notion.com/p/3f06864168f581d6bc09fb8ad055d34f?pvs=204",
+      "last_edited_at": "2026-10-06T03:38:04.635Z",
+      "checks": {
+        "new_reference": true,
+        "updated_summary": true,
+        "unknown_blocks": 0,
+        "truncated": false
+      }
+    },
+    {
+      "title": "Multi-Agent CDR实验",
+      "url": "https://app.notion.com/p/3e66864168f580e29049feefdfeda3cf?pvs=204",
+      "last_edited_at": "2026-10-06T03:38:10.297Z",
+      "checks": {
+        "new_reference": true,
+        "updated_summary": true,
+        "unknown_blocks": 0,
+        "truncated": false
+      }
+    },
+    {
+      "title": "Cloth→Sports 真实输入与反馈（2026-10-06）",
+      "url": "https://app.notion.com/p/3f16864168f5819d8463d9dfe0fa6a5d?pvs=204",
+      "last_edited_at": "2026-10-06T03:38:11.497Z",
+      "checks": {
+        "new_reference": true,
+        "updated_summary": true,
+        "unknown_blocks": 0,
+        "truncated": false
+      }
+    }
+  ],
+  "attachments": 2
+}

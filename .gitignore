@@ -1,0 +1,58 @@
+# Local credentials and connection settings
+.env
+.env.*
+!.env.example
+!.env.*.example
+.codex_tools/
+*.pem
+*.key
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.egg-info/
+
+# Downloaded datasets and regenerated evidence caches
+/CDRec/data/*
+!/CDRec/data/README.md
+
+# Model weights, checkpoints and numeric artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.gguf
+*.onnx
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Local runs, downloaded models and transfer archives
+/runs/
+/checkpoints/
+/model_cache/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+
+# Large derived ID mappings remain in the local result archive.
+# Keep experiment code, logs, manifests, JSON/CSV results and examples tracked.
+/doc/experiments/*/artifacts/**/bundle/id_mapping.json
+
+# Transient process/download files and OS metadata
+*.pid
+*.pid.lock
+*.part
+*.partial
+*.tmp
+.DS_Store
+Thumbs.db

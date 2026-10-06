@@ -1,0 +1,1081 @@
+{
+  "state": "complete_verified",
+  "pairs": 200,
+  "users": 20,
+  "judgments": 800,
+  "prompt_version": "four_evidence_v5_short_reason",
+  "roles": {
+    "semantic": {
+      "labels": {
+        "A": 83,
+        "B": 30,
+        "C": 87
+      },
+      "mean_confidence": 0.9266548754879952,
+      "median_confidence": 0.9990677206805247,
+      "min_confidence": 0.36575154254360365,
+      "confidence_ge_095_share": 0.81,
+      "mean_label_mass": 0.9994414736807167,
+      "min_label_mass": 0.9932778989579736,
+      "low_label_mass_count": 0
+    },
+    "collaborative": {
+      "labels": {
+        "A": 115,
+        "B": 62,
+        "C": 23
+      },
+      "mean_confidence": 0.9505035340439194,
+      "median_confidence": 0.999141408376989,
+      "min_confidence": 0.3657515423706036,
+      "confidence_ge_095_share": 0.855,
+      "mean_label_mass": 0.999487806627696,
+      "min_label_mass": 0.9945638915094034,
+      "low_label_mass_count": 0
+    },
+    "overlap": {
+      "labels": {
+        "A": 2,
+        "B": 100,
+        "C": 98
+      },
+      "mean_confidence": 0.9860607803419267,
+      "median_confidence": 0.9998705385941912,
+      "min_confidence": 0.36897903189925896,
+      "confidence_ge_095_share": 0.955,
+      "mean_label_mass": 0.9999202545855157,
+      "min_label_mass": 0.9989678251026121,
+      "low_label_mass_count": 0
+    },
+    "popularity_bias": {
+      "labels": {
+        "A": 0,
+        "B": 2,
+        "C": 198
+      },
+      "mean_confidence": 0.9902858443224478,
+      "median_confidence": 0.9998918683326236,
+      "min_confidence": 0.5044145666093258,
+      "confidence_ge_095_share": 0.955,
+      "mean_label_mass": 0.9999167645172727,
+      "min_label_mass": 0.9952532134004658,
+      "low_label_mass_count": 0
+    }
+  },
+  "inputs_sha256": "dcd24afa46e9729d3584410c3b087d88848b669556e7d1178c01040255d8a48e",
+  "feedback_sha256": "a787f4530501a01ea48fdc6f767da67073c286dbf5360776b50835625c07c2be",
+  "confidence_is_correctness_probability": false,
+  "held_out_target_accuracy_evaluated": false,
+  "examples": [
+    {
+      "input": {
+        "pair_id": "cloth_sports:prompt_dev:1365:2456",
+        "source_user_id": 1365,
+        "target_item_id": 2456,
+        "source_preference": "Observed source-domain training reviews: 6. Positive ratings (4-5): 5; neutral (above 2 and below 4): 1; negative ratings (1-2): 0; unknown: 0. Positive-rated categories: Accessories (1 reviews); Baseball Caps (1 reviews); Costumes & Accessories (1 reviews); Kids & Baby (1 reviews); Luggage & Travel Gear (1 reviews); Men (1 reviews); Sunglasses (1 reviews). Low-rated categories: no available category evidence. Observed interactions alone are not interpreted as positive preference.",
+        "candidate_description": "Emergency Mylar Thermal Blankets (Pack of 10)\nMylar\nSports & Outdoors > Outdoor Gear > Camping & Hiking > Safety & Survival > Emergency Blankets\nDisposable rescue blanket keeps in body heat and preserves body temperature. Small enough to fit in most first aid kits.",
+        "evidence": {
+          "semantic": {
+            "similarity": 0.5598228573799133,
+            "rank": 13692,
+            "ranking_items": 18357,
+            "score_definition": "L2 positive_source_profile dot L2 target_text;not_probability",
+            "positive_history_items": 5,
+            "encoded_positive_history_items": 5,
+            "related_positive_history": [
+              {
+                "source_item_id": 12614,
+                "record_id": "src:reviews:162610",
+                "rating": 4.0,
+                "title": "1 Custom Windproof Black Neoprene Half Face Mask Facemask Neck Wear Warmer Vent Winter Outdoor Sport",
+                "similarity": 0.497123658657074
+              },
+              {
+                "source_item_id": 1464,
+                "record_id": "src:reviews:25009",
+                "rating": 4.0,
+                "title": "The Original Aviator - Full Mirror Lens Single or 2-Pack",
+                "similarity": 0.47098326683044434
+              },
+              {
+                "source_item_id": 14167,
+                "record_id": "src:reviews:181147",
+                "rating": 5.0,
+                "title": "Yupoong Wool Blend Snapback Snap Back Hat Baseball Cap 6098M",
+                "similarity": 0.4657360017299652
+              },
+              {
+                "source_item_id": 3288,
+                "record_id": "src:reviews:50454",
+                "rating": 4.0,
+                "title": "Self Adhesive Mustaches Set - Fake Costume Halloween - 3 Count (Packs of 12)",
+                "similarity": 0.44730520248413086
+              },
+              {
+                "source_item_id": 7553,
+                "record_id": "src:reviews:103577",
+                "rating": 5.0,
+                "title": "Accoutrements Horse Head Mask",
+                "similarity": 0.41884645819664
+              }
+            ],
+            "related_negative_history": [],
+            "missing_source_preference_vector": false,
+            "missing_target_text_vector": false,
+            "missing_target_description": false,
+            "matched_concepts": [
+              {
+                "concept": "pack",
+                "match_type": "literal_token",
+                "source": {
+                  "field": "title",
+                  "span": "Pack",
+                  "source_item_id": 1464,
+                  "record_id": "src:reviews:25009"
+                },
+                "target": {
+                  "field": "title",
+                  "span": "Pack"
+                }
+              }
+            ],
+            "unmatched_concepts": [
+              {
+                "concept": "blankets",
+                "target": {
+                  "field": "title",
+                  "span": "Blankets"
+                }
+              },
+              {
+                "concept": "emergency",
+                "target": {
+                  "field": "title",
+                  "span": "Emergency"
+                }
+              },
+              {
+                "concept": "mylar",
+                "target": {
+                  "field": "title",
+                  "span": "Mylar"
+                }
+              },
+              {
+                "concept": "thermal",
+                "target": {
+                  "field": "title",
+                  "span": "Thermal"
+                }
+              }
+            ],
+            "matched_total": 1,
+            "unmatched_total": 4,
+            "concept_list_limit": 12,
+            "unmatched_meaning": "no literal positive-history support found;not_negative_evidence"
+          },
+          "collaborative": {
+            "g_raw": 2.2883777618408203,
+            "rank": 3,
+            "ranking_items": 18357,
+            "rank_percentile": 99.98910438003922,
+            "source_history_length": 6,
+            "mapping_support_users": 2816,
+            "candidate_visible_train_users": 375,
+            "score_definition": "frozen_EMCDR_mapped_source_user_dot_target_item;not_probability",
+            "missing_visible_target_support": false
+          },
+          "overlap": {
+            "actual_neighbors": 20,
+            "requested_neighbors": 20,
+            "direct_support_users": 0,
+            "indirect_support_users": 2,
+            "union_support_users": 2,
+            "union_support_rate": 0.1,
+            "weighted_union_support_rate": 0.10455488712026323,
+            "target_neighbor_count": 20,
+            "target_neighbors": [
+              {
+                "item_id": 5857,
+                "cooccurrence_cosine": 0.18833321332931519
+              },
+              {
+                "item_id": 4787,
+                "cooccurrence_cosine": 0.14534702897071838
+              },
+              {
+                "item_id": 4069,
+                "cooccurrence_cosine": 0.10319697856903076
+              },
+              {
+                "item_id": 4639,
+                "cooccurrence_cosine": 0.08852533251047134
+              },
+              {
+                "item_id": 14995,
+                "cooccurrence_cosine": 0.08784666657447815
+              }
+            ],
+            "support_examples": [
+              {
+                "support_user_id": 65,
+                "source_behavior_cosine": 0.18257418274879456,
+                "direct_target_item_id": null,
+                "observed_target_neighbor_ids": [
+                  4535,
+                  5634
+                ]
+              },
+              {
+                "support_user_id": 2497,
+                "source_behavior_cosine": 0.18257418274879456,
+                "direct_target_item_id": null,
+                "observed_target_neighbor_ids": [
+                  3583,
+                  5634
+                ]
+              }
+            ],
+            "missing_neighbors": false,
+            "scope": "source_binary_behavior;support_only;visible_target_cooccurrence",
+            "interaction_meaning": "observed_training_interaction;not_explicit_like",
+            "denominator": "actual_positive_similarity_support_neighbors;union_deduplicated_by_user"
+          },
+          "popularity_bias": {
+            "train_interactions": 375,
+            "distinct_train_users": 375,
+            "visible_target_users": 34506,
+            "popularity_rank": 8,
+            "popularity_percentile": 99.96186740752846,
+            "global_support_rate": 0.010867675186924013,
+            "local_support_users": 0,
+            "local_group_size": 20,
+            "local_support_rate": 0.0,
+            "smoothed_local_rate": 0.0036225583956413375,
+            "relative_support": 0.3333333333333333,
+            "prior_strength": 10,
+            "smoothing_formula": "(local_users+prior_strength*global_rate)/(local_group_size+prior_strength)",
+            "exposure_available": false,
+            "exposure": null,
+            "missing_neighbors": false,
+            "scope": "visible_target_train;local_direct_support_only;no_causal_bias_claim"
+          }
+        },
+        "provenance": {
+          "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+          "encoder_sha256": "fe81b09c9ca562df3821e3834dd780dbb324c9700a4d5eb9c103174fada64257",
+          "g_sha256": "5566790f3ad5c28406252a52dc6a129a1c2794b9654884a2ee241b429fed9710",
+          "group": "prompt_dev",
+          "source_profile_template": "rating_categories_v1",
+          "context_char_limits": {
+            "source": 1400,
+            "candidate": 1000
+          },
+          "retrieval": {
+            "rrf": 0.015873015873015872,
+            "sources": {
+              "g": {
+                "score": 2.2883777618408203,
+                "recall_rank": 3
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "pair_id": "cloth_sports:prompt_dev:1365:2456",
+        "source_user_id": 1365,
+        "target_item_id": 2456,
+        "model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+        "prompt_version": "four_evidence_v5_short_reason",
+        "confidence_definition": "1-H(A,B,C)/ln(3)",
+        "agents": {
+          "semantic": {
+            "prediction": "A",
+            "confidence": 0.8776474866631289,
+            "label_probabilities": {
+              "A": 0.9704705740433592,
+              "B": 0.029305674371665865,
+              "C": 0.00022375158497489858
+            },
+            "label_logprobs": {
+              "A": -0.030671199783682823,
+              "B": -3.5306711196899414,
+              "C": -8.405671119689941
+            },
+            "label_mass": 0.9993032403076059,
+            "low_label_mass": false,
+            "reasoning": "Matched \"pack\" concept in title; 5 positive source reviews with no negative history; 4 unmatched concepts (emergency, mylar, thermal, blankets) lack positive history support; limited evidence for pseudo-interaction.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:362"
+          },
+          "collaborative": {
+            "prediction": "A",
+            "confidence": 0.9999680233185224,
+            "label_probabilities": {
+              "A": 0.9999975601879422,
+              "B": 4.450839926371428e-07,
+              "C": 1.9947280651843108e-06
+            },
+            "label_logprobs": {
+              "A": -0.0002351722796447575,
+              "B": -14.625235557556152,
+              "C": -13.125235557556152
+            },
+            "label_mass": 0.9997672946154886,
+            "low_label_mass": false,
+            "reasoning": "G score 2.29 and rank 3 among 18,357 items indicate strong collaborative support; 375 visible train users and 2,816 mapping support users confirm sufficient neighbor evidence, though limited by no observed target support.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:362"
+          },
+          "overlap": {
+            "prediction": "B",
+            "confidence": 0.9999809119868938,
+            "label_probabilities": {
+              "A": 9.422439494758812e-07,
+              "B": 0.9999986126715243,
+              "C": 4.450845262550009e-07
+            },
+            "label_logprobs": {
+              "B": -2.932505594799295e-05,
+              "A": -13.875029563903809,
+              "C": -14.625029563903809
+            },
+            "label_mass": 0.9999720626637447,
+            "low_label_mass": false,
+            "reasoning": "Only 2 out of 20 overlap users show indirect support, with no direct support; sparse cross-domain behavior limits confidence in strong endorsement.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:425"
+          },
+          "popularity_bias": {
+            "prediction": "C",
+            "confidence": 0.9940415930036258,
+            "label_probabilities": {
+              "A": 0.0008040851748561699,
+              "B": 8.308593124504527e-07,
+              "C": 0.9991950839658313
+            },
+            "label_logprobs": {
+              "C": -0.000841025379486382,
+              "A": -7.12584114074707,
+              "B": -14.00084114074707
+            },
+            "label_mass": 0.9999642154138142,
+            "low_label_mass": false,
+            "reasoning": "Popularity percentile 99.96 and rank 8 indicate extreme popularity; local support rate 0.0 with 0 local support users shows no personalized evidence despite high global exposure, suggesting support is due to popularity bias.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:356"
+          }
+        },
+        "elapsed_seconds": 3.476
+      }
+    },
+    {
+      "input": {
+        "pair_id": "cloth_sports:prompt_dev:1365:4069",
+        "source_user_id": 1365,
+        "target_item_id": 4069,
+        "source_preference": "Observed source-domain training reviews: 6. Positive ratings (4-5): 5; neutral (above 2 and below 4): 1; negative ratings (1-2): 0; unknown: 0. Positive-rated categories: Accessories (1 reviews); Baseball Caps (1 reviews); Costumes & Accessories (1 reviews); Kids & Baby (1 reviews); Luggage & Travel Gear (1 reviews); Men (1 reviews); Sunglasses (1 reviews). Low-rated categories: no available category evidence. Observed interactions alone are not interpreted as positive preference.",
+        "candidate_description": "Rothco 550lb. Type III Nylon Paracord\nSports & Outdoors > Hunting & Fishing > Tactical & Duty > Paracords\nAn ideal all-around utility cord in the field, the Rothco Type III commercial paracord is tough and long lasting. The cord is made of 550-pound test nylon and features a seven-strand core for maximum strength. Measuring 5/32 inches in diameter, the paracord is manufactured in the United States by a certified US Government contractor. The paracord is available in several lengths and colors.",
+        "evidence": {
+          "semantic": {
+            "similarity": 0.5862740278244019,
+            "rank": 8572,
+            "ranking_items": 18357,
+            "score_definition": "L2 positive_source_profile dot L2 target_text;not_probability",
+            "positive_history_items": 5,
+            "encoded_positive_history_items": 5,
+            "related_positive_history": [
+              {
+                "source_item_id": 14167,
+                "record_id": "src:reviews:181147",
+                "rating": 5.0,
+                "title": "Yupoong Wool Blend Snapback Snap Back Hat Baseball Cap 6098M",
+                "similarity": 0.5308605432510376
+              },
+              {
+                "source_item_id": 3288,
+                "record_id": "src:reviews:50454",
+                "rating": 4.0,
+                "title": "Self Adhesive Mustaches Set - Fake Costume Halloween - 3 Count (Packs of 12)",
+                "similarity": 0.5022752285003662
+              },
+              {
+                "source_item_id": 12614,
+                "record_id": "src:reviews:162610",
+                "rating": 4.0,
+                "title": "1 Custom Windproof Black Neoprene Half Face Mask Facemask Neck Wear Warmer Vent Winter Outdoor Sport",
+                "similarity": 0.4944854974746704
+              },
+              {
+                "source_item_id": 1464,
+                "record_id": "src:reviews:25009",
+                "rating": 4.0,
+                "title": "The Original Aviator - Full Mirror Lens Single or 2-Pack",
+                "similarity": 0.43491679430007935
+              },
+              {
+                "source_item_id": 7553,
+                "record_id": "src:reviews:103577",
+                "rating": 5.0,
+                "title": "Accoutrements Horse Head Mask",
+                "similarity": 0.42082348465919495
+              }
+            ],
+            "related_negative_history": [],
+            "missing_source_preference_vector": false,
+            "missing_target_text_vector": false,
+            "missing_target_description": false,
+            "matched_concepts": [],
+            "unmatched_concepts": [
+              {
+                "concept": "iii",
+                "target": {
+                  "field": "title",
+                  "span": "III"
+                }
+              },
+              {
+                "concept": "nylon",
+                "target": {
+                  "field": "title",
+                  "span": "Nylon"
+                }
+              },
+              {
+                "concept": "paracord",
+                "target": {
+                  "field": "title",
+                  "span": "Paracord"
+                }
+              },
+              {
+                "concept": "paracords",
+                "target": {
+                  "field": "category_leaf",
+                  "span": "Paracords"
+                }
+              },
+              {
+                "concept": "rothco",
+                "target": {
+                  "field": "title",
+                  "span": "Rothco"
+                }
+              },
+              {
+                "concept": "type",
+                "target": {
+                  "field": "title",
+                  "span": "Type"
+                }
+              }
+            ],
+            "matched_total": 0,
+            "unmatched_total": 6,
+            "concept_list_limit": 12,
+            "unmatched_meaning": "no literal positive-history support found;not_negative_evidence"
+          },
+          "collaborative": {
+            "g_raw": 2.6184144020080566,
+            "rank": 1,
+            "ranking_items": 18357,
+            "rank_percentile": 100.0,
+            "source_history_length": 6,
+            "mapping_support_users": 2816,
+            "candidate_visible_train_users": 626,
+            "score_definition": "frozen_EMCDR_mapped_source_user_dot_target_item;not_probability",
+            "missing_visible_target_support": false
+          },
+          "overlap": {
+            "actual_neighbors": 20,
+            "requested_neighbors": 20,
+            "direct_support_users": 0,
+            "indirect_support_users": 2,
+            "union_support_users": 2,
+            "union_support_rate": 0.1,
+            "weighted_union_support_rate": 0.10455488712026323,
+            "target_neighbor_count": 20,
+            "target_neighbors": [
+              {
+                "item_id": 2456,
+                "cooccurrence_cosine": 0.10319697856903076
+              },
+              {
+                "item_id": 4787,
+                "cooccurrence_cosine": 0.10178154706954956
+              },
+              {
+                "item_id": 5857,
+                "cooccurrence_cosine": 0.09404242783784866
+              },
+              {
+                "item_id": 8359,
+                "cooccurrence_cosine": 0.08543411642313004
+              },
+              {
+                "item_id": 2135,
+                "cooccurrence_cosine": 0.07508686929941177
+              }
+            ],
+            "support_examples": [
+              {
+                "support_user_id": 65,
+                "source_behavior_cosine": 0.18257418274879456,
+                "direct_target_item_id": null,
+                "observed_target_neighbor_ids": [
+                  5634
+                ]
+              },
+              {
+                "support_user_id": 2497,
+                "source_behavior_cosine": 0.18257418274879456,
+                "direct_target_item_id": null,
+                "observed_target_neighbor_ids": [
+                  3583,
+                  5634
+                ]
+              }
+            ],
+            "missing_neighbors": false,
+            "scope": "source_binary_behavior;support_only;visible_target_cooccurrence",
+            "interaction_meaning": "observed_training_interaction;not_explicit_like",
+            "denominator": "actual_positive_similarity_support_neighbors;union_deduplicated_by_user"
+          },
+          "popularity_bias": {
+            "train_interactions": 626,
+            "distinct_train_users": 626,
+            "visible_target_users": 34506,
+            "popularity_rank": 3,
+            "popularity_percentile": 99.98910497357956,
+            "global_support_rate": 0.01814177244537182,
+            "local_support_users": 0,
+            "local_group_size": 20,
+            "local_support_rate": 0.0,
+            "smoothed_local_rate": 0.006047257481790607,
+            "relative_support": 0.33333333333333337,
+            "prior_strength": 10,
+            "smoothing_formula": "(local_users+prior_strength*global_rate)/(local_group_size+prior_strength)",
+            "exposure_available": false,
+            "exposure": null,
+            "missing_neighbors": false,
+            "scope": "visible_target_train;local_direct_support_only;no_causal_bias_claim"
+          }
+        },
+        "provenance": {
+          "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+          "encoder_sha256": "fe81b09c9ca562df3821e3834dd780dbb324c9700a4d5eb9c103174fada64257",
+          "g_sha256": "5566790f3ad5c28406252a52dc6a129a1c2794b9654884a2ee241b429fed9710",
+          "group": "prompt_dev",
+          "source_profile_template": "rating_categories_v1",
+          "context_char_limits": {
+            "source": 1400,
+            "candidate": 1000
+          },
+          "retrieval": {
+            "rrf": 0.01639344262295082,
+            "sources": {
+              "g": {
+                "score": 2.6184144020080566,
+                "recall_rank": 1
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "pair_id": "cloth_sports:prompt_dev:1365:4069",
+        "source_user_id": 1365,
+        "target_item_id": 4069,
+        "model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+        "prompt_version": "four_evidence_v5_short_reason",
+        "confidence_definition": "1-H(A,B,C)/ln(3)",
+        "agents": {
+          "semantic": {
+            "prediction": "C",
+            "confidence": 0.9965627110048998,
+            "label_probabilities": {
+              "A": 5.712545907274797e-07,
+              "B": 0.0004305567861669099,
+              "C": 0.9995688719592425
+            },
+            "label_logprobs": {
+              "C": -0.0004781533498317003,
+              "A": -14.37547779083252,
+              "B": -7.750478267669678
+            },
+            "label_mass": 0.9999530687546452,
+            "low_label_mass": false,
+            "reasoning": "No literal positive-history support found; 6 unmatched concepts including key terms like \"paracord,\" \"nylon,\" and \"Rothco\" indicate weak semantic alignment despite moderate similarity score (0.586).",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:356"
+          },
+          "collaborative": {
+            "prediction": "A",
+            "confidence": 0.9996469874532391,
+            "label_probabilities": {
+              "A": 0.9999670423900447,
+              "B": 5.422069415380515e-06,
+              "C": 2.753554053998028e-05
+            },
+            "label_logprobs": {
+              "A": -0.00030417583184316754,
+              "B": -12.125304222106934,
+              "C": -10.500304222106934
+            },
+            "label_mass": 0.999728819097416,
+            "low_label_mass": false,
+            "reasoning": "G score 2.62 and 2816 mapping support users indicate strong collaborative signal; 626 visible train users support target; evidence limitation: no explicit positive rating history.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:362"
+          },
+          "overlap": {
+            "prediction": "B",
+            "confidence": 0.9999669151863531,
+            "label_probabilities": {
+              "A": 1.5534964737073213e-06,
+              "B": 0.9999975042602852,
+              "C": 9.422432410589513e-07
+            },
+            "label_logprobs": {
+              "B": -5.447716102935374e-05,
+              "A": -13.375054359436035,
+              "C": -13.875054359436035
+            },
+            "label_mass": 0.9999480199328102,
+            "low_label_mass": false,
+            "reasoning": "Only 2 out of 20 overlap users show indirect support, with no direct support; weak evidence limits confidence in strong support.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:425"
+          },
+          "popularity_bias": {
+            "prediction": "C",
+            "confidence": 0.9925932378451121,
+            "label_probabilities": {
+              "A": 0.0010322307565357883,
+              "B": 5.038269224836945e-07,
+              "C": 0.9989672654165417
+            },
+            "label_logprobs": {
+              "C": -0.0010969580616801977,
+              "A": -6.876096725463867,
+              "B": -14.501096725463867
+            },
+            "label_mass": 0.9999363121877286,
+            "low_label_mass": false,
+            "reasoning": "Popularity percentile 99.99 and rank 3 indicate extreme popularity; local support rate 0.0 with 0 users contradicts personalized support despite global rate 1.8%, suggesting bias dominates.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:356"
+          }
+        },
+        "elapsed_seconds": 3.23
+      }
+    },
+    {
+      "input": {
+        "pair_id": "cloth_sports:prompt_dev:1365:7137",
+        "source_user_id": 1365,
+        "target_item_id": 7137,
+        "source_preference": "Observed source-domain training reviews: 6. Positive ratings (4-5): 5; neutral (above 2 and below 4): 1; negative ratings (1-2): 0; unknown: 0. Positive-rated categories: Accessories (1 reviews); Baseball Caps (1 reviews); Costumes & Accessories (1 reviews); Kids & Baby (1 reviews); Luggage & Travel Gear (1 reviews); Men (1 reviews); Sunglasses (1 reviews). Low-rated categories: no available category evidence. Observed interactions alone are not interpreted as positive preference.",
+        "candidate_description": "Scala Hats Brushed Twill Safari\nSports & Outdoors > Clothing > Men > Accessories > Hats & Caps > Sun Hats; Clothing, Shoes & Jewelry > Men; Clothing, Shoes & Jewelry > Novelty, Costumes & More > Novelty > Clothing > Men > Accessories > Hats & Caps",
+        "evidence": {
+          "semantic": {
+            "similarity": 0.7693700194358826,
+            "rank": 3,
+            "ranking_items": 18357,
+            "score_definition": "L2 positive_source_profile dot L2 target_text;not_probability",
+            "positive_history_items": 5,
+            "encoded_positive_history_items": 5,
+            "related_positive_history": [
+              {
+                "source_item_id": 14167,
+                "record_id": "src:reviews:181147",
+                "rating": 5.0,
+                "title": "Yupoong Wool Blend Snapback Snap Back Hat Baseball Cap 6098M",
+                "similarity": 0.7120147943496704
+              },
+              {
+                "source_item_id": 12614,
+                "record_id": "src:reviews:162610",
+                "rating": 4.0,
+                "title": "1 Custom Windproof Black Neoprene Half Face Mask Facemask Neck Wear Warmer Vent Winter Outdoor Sport",
+                "similarity": 0.6752942800521851
+              },
+              {
+                "source_item_id": 7553,
+                "record_id": "src:reviews:103577",
+                "rating": 5.0,
+                "title": "Accoutrements Horse Head Mask",
+                "similarity": 0.5732207894325256
+              },
+              {
+                "source_item_id": 3288,
+                "record_id": "src:reviews:50454",
+                "rating": 4.0,
+                "title": "Self Adhesive Mustaches Set - Fake Costume Halloween - 3 Count (Packs of 12)",
+                "similarity": 0.5663191676139832
+              },
+              {
+                "source_item_id": 1464,
+                "record_id": "src:reviews:25009",
+                "rating": 4.0,
+                "title": "The Original Aviator - Full Mirror Lens Single or 2-Pack",
+                "similarity": 0.56451016664505
+              }
+            ],
+            "related_negative_history": [],
+            "missing_source_preference_vector": false,
+            "missing_target_text_vector": false,
+            "missing_target_description": true,
+            "matched_concepts": [
+              {
+                "concept": "caps",
+                "match_type": "literal_token",
+                "source": {
+                  "field": "category_leaf",
+                  "span": "Caps",
+                  "source_item_id": 14167,
+                  "record_id": "src:reviews:181147"
+                },
+                "target": {
+                  "field": "category_leaf",
+                  "span": "Caps"
+                }
+              }
+            ],
+            "unmatched_concepts": [
+              {
+                "concept": "brushed",
+                "target": {
+                  "field": "title",
+                  "span": "Brushed"
+                }
+              },
+              {
+                "concept": "hats",
+                "target": {
+                  "field": "title",
+                  "span": "Hats"
+                }
+              },
+              {
+                "concept": "safari",
+                "target": {
+                  "field": "title",
+                  "span": "Safari"
+                }
+              },
+              {
+                "concept": "scala",
+                "target": {
+                  "field": "title",
+                  "span": "Scala"
+                }
+              },
+              {
+                "concept": "sun",
+                "target": {
+                  "field": "category_leaf",
+                  "span": "Sun"
+                }
+              },
+              {
+                "concept": "twill",
+                "target": {
+                  "field": "title",
+                  "span": "Twill"
+                }
+              }
+            ],
+            "matched_total": 1,
+            "unmatched_total": 6,
+            "concept_list_limit": 12,
+            "unmatched_meaning": "no literal positive-history support found;not_negative_evidence"
+          },
+          "collaborative": {
+            "g_raw": 0.007268458604812622,
+            "rank": 6809,
+            "ranking_items": 18357,
+            "rank_percentile": 62.91130965351929,
+            "source_history_length": 6,
+            "mapping_support_users": 2816,
+            "candidate_visible_train_users": 9,
+            "score_definition": "frozen_EMCDR_mapped_source_user_dot_target_item;not_probability",
+            "missing_visible_target_support": false
+          },
+          "overlap": {
+            "actual_neighbors": 20,
+            "requested_neighbors": 20,
+            "direct_support_users": 0,
+            "indirect_support_users": 0,
+            "union_support_users": 0,
+            "union_support_rate": 0.0,
+            "weighted_union_support_rate": 0.0,
+            "target_neighbor_count": 20,
+            "target_neighbors": [
+              {
+                "item_id": 11621,
+                "cooccurrence_cosine": 0.1666666716337204
+              },
+              {
+                "item_id": 16792,
+                "cooccurrence_cosine": 0.1666666716337204
+              },
+              {
+                "item_id": 1077,
+                "cooccurrence_cosine": 0.14907120168209076
+              },
+              {
+                "item_id": 6544,
+                "cooccurrence_cosine": 0.14907120168209076
+              },
+              {
+                "item_id": 7223,
+                "cooccurrence_cosine": 0.14907120168209076
+              }
+            ],
+            "support_examples": [],
+            "missing_neighbors": false,
+            "scope": "source_binary_behavior;support_only;visible_target_cooccurrence",
+            "interaction_meaning": "observed_training_interaction;not_explicit_like",
+            "denominator": "actual_positive_similarity_support_neighbors;union_deduplicated_by_user"
+          },
+          "popularity_bias": {
+            "train_interactions": 9,
+            "distinct_train_users": 9,
+            "visible_target_users": 34506,
+            "popularity_rank": 8548,
+            "popularity_percentile": 55.73895516696628,
+            "global_support_rate": 0.0002608242044861763,
+            "local_support_users": 0,
+            "local_group_size": 20,
+            "local_support_rate": 0.0,
+            "smoothed_local_rate": 8.69414014953921e-05,
+            "relative_support": 0.3333333333333333,
+            "prior_strength": 10,
+            "smoothing_formula": "(local_users+prior_strength*global_rate)/(local_group_size+prior_strength)",
+            "exposure_available": false,
+            "exposure": null,
+            "missing_neighbors": false,
+            "scope": "visible_target_train;local_direct_support_only;no_causal_bias_claim"
+          }
+        },
+        "provenance": {
+          "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+          "encoder_sha256": "fe81b09c9ca562df3821e3834dd780dbb324c9700a4d5eb9c103174fada64257",
+          "g_sha256": "5566790f3ad5c28406252a52dc6a129a1c2794b9654884a2ee241b429fed9710",
+          "group": "prompt_dev",
+          "source_profile_template": "rating_categories_v1",
+          "context_char_limits": {
+            "source": 1400,
+            "candidate": 1000
+          },
+          "retrieval": {
+            "rrf": 0.015873015873015872,
+            "sources": {
+              "semantic": {
+                "score": 0.7693700194358826,
+                "recall_rank": 3
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "pair_id": "cloth_sports:prompt_dev:1365:7137",
+        "source_user_id": 1365,
+        "target_item_id": 7137,
+        "model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+        "prompt_version": "four_evidence_v5_short_reason",
+        "confidence_definition": "1-H(A,B,C)/ln(3)",
+        "agents": {
+          "semantic": {
+            "prediction": "A",
+            "confidence": 0.9160753523684089,
+            "label_probabilities": {
+              "A": 0.9817914996425259,
+              "B": 0.017982138638469983,
+              "C": 0.0002263617190042286
+            },
+            "label_logprobs": {
+              "A": -0.018763545900583267,
+              "B": -4.018763542175293,
+              "C": -8.393763542175293
+            },
+            "label_mass": 0.9996128443909974,
+            "low_label_mass": false,
+            "reasoning": "Matched \"caps\" in category; 5 positive source reviews; 1 matched concept; 6 unmatched concepts with no negative evidence; limited by lack of target description.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:362"
+          },
+          "collaborative": {
+            "prediction": "B",
+            "confidence": 0.7539754898770475,
+            "label_probabilities": {
+              "A": 0.00018799834048546674,
+              "B": 0.9239680760614293,
+              "C": 0.07584392559808513
+            },
+            "label_logprobs": {
+              "B": -0.08018050342798233,
+              "A": -8.580180168151855,
+              "C": -2.5801804065704346
+            },
+            "label_mass": 0.998897862027077,
+            "low_label_mass": false,
+            "reasoning": "G score 0.0073 is very low; only 9 visible training users support the candidate, with 2,816 mapping support users, indicating weak user-item alignment despite moderate ranking.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:425"
+          },
+          "overlap": {
+            "prediction": "C",
+            "confidence": 0.999697428428381,
+            "label_probabilities": {
+              "A": 1.0676739772113338e-06,
+              "B": 2.753567479302174e-05,
+              "C": 0.9999713966512297
+            },
+            "label_logprobs": {
+              "C": -6.151010165922344e-05,
+              "A": -13.75006103515625,
+              "B": -10.50006103515625
+            },
+            "label_mass": 0.9999670941976024,
+            "low_label_mass": false,
+            "reasoning": "0 direct/indirect support users among 20 overlap neighbors; no observed positive interactions; weak evidence for pseudo-interaction.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:356"
+          },
+          "popularity_bias": {
+            "prediction": "C",
+            "confidence": 0.9999965325313219,
+            "label_probabilities": {
+              "A": 2.102433619849348e-07,
+              "B": 1.9555660275221503e-08,
+              "C": 0.9999997702009777
+            },
+            "label_logprobs": {
+              "C": -4.887569048150908e-06,
+              "A": -15.375004768371582,
+              "B": -17.7500057220459
+            },
+            "label_mass": 0.9999953422408479,
+            "low_label_mass": false,
+            "reasoning": "Low local support rate (0.0%) and zero local support users despite moderate popularity percentile (55.7%) suggest support is due to popularity, not personalized preference; evidence limitation: no exposure data. Reject.",
+            "label_token_ids": {
+              "A": 362,
+              "B": 425,
+              "C": 356
+            },
+            "label_continuations": {
+              "A": " A",
+              "B": " B",
+              "C": " C"
+            },
+            "sampled_token": "token_id:356"
+          }
+        },
+        "elapsed_seconds": 2.925
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "state": "complete",
+  "pid": 35848,
+  "started_at": "2026-10-06T00:42:12.225767+00:00",
+  "connection_mode": "direct",
+  "download_pid": 24916,
+  "download": {
+    "state": "complete",
+    "started_at": "2026-10-06T00:42:12.544574+00:00",
+    "files": {
+      "reviews_Clothing_Shoes_and_Jewelry_5.json.gz": {
+        "state": "complete",
+        "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Clothing_Shoes_and_Jewelry_5.json.gz",
+        "path": "F:\\Projects\\MultiAgentCDR\\CDRec\\data\\Amazon2014\\Clothing_Shoes_and_Jewelry\\raw\\reviews_Clothing_Shoes_and_Jewelry_5.json.gz",
+        "network_bytes": 0,
+        "expected_bytes": 47285200,
+        "attempt": 1,
+        "received_bytes": 47285200,
+        "sha256": "b87037787e9d5374ce72995a29ac192cde1573513c31abfd4ca7781d802b1e22",
+        "completed_at": "2026-10-06T00:42:14.004403+00:00"
+      },
+      "meta_Clothing_Shoes_and_Jewelry.json.gz": {
+        "state": "complete",
+        "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Clothing_Shoes_and_Jewelry.json.gz",
+        "path": "F:\\Projects\\MultiAgentCDR\\CDRec\\data\\Amazon2014\\Clothing_Shoes_and_Jewelry\\raw\\meta_Clothing_Shoes_and_Jewelry.json.gz",
+        "network_bytes": 125799845,
+        "expected_bytes": 280989093,
+        "attempt": 2,
+        "received_bytes": 280989093,
+        "error": null,
+        "sha256": "5c3eb997cae891aeb646acaa05550b927cb205e5a3ead9d771d3f529110009c0",
+        "completed_at": "2026-10-06T00:45:03.922729+00:00"
+      },
+      "reviews_Sports_and_Outdoors_5.json.gz": {
+        "state": "complete",
+        "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Sports_and_Outdoors_5.json.gz",
+        "path": "F:\\Projects\\MultiAgentCDR\\CDRec\\data\\Amazon2014\\Sports_and_Outdoors\\raw\\reviews_Sports_and_Outdoors_5.json.gz",
+        "network_bytes": 0,
+        "expected_bytes": 68275834,
+        "attempt": 1,
+        "received_bytes": 68275834,
+        "sha256": "8130a2206c3062db1b4b9d4353efc303b0ebd13f48372559fee26c47a1d7fe51",
+        "completed_at": "2026-10-06T00:42:14.175998+00:00"
+      },
+      "meta_Sports_and_Outdoors.json.gz": {
+        "state": "complete",
+        "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Sports_and_Outdoors.json.gz",
+        "path": "F:\\Projects\\MultiAgentCDR\\CDRec\\data\\Amazon2014\\Sports_and_Outdoors\\raw\\meta_Sports_and_Outdoors.json.gz",
+        "network_bytes": 24808075,
+        "expected_bytes": 183143051,
+        "attempt": 1,
+        "received_bytes": 183143051,
+        "error": null,
+        "sha256": "677108a0fe0f47cce08885a348879a5a89dd69e75fbc5d66410ae436750df086",
+        "completed_at": "2026-10-06T00:42:27.199968+00:00"
+      }
+    },
+    "connection_mode": "direct",
+    "updated_at": "2026-10-06T00:45:03.924487+00:00",
+    "elapsed_seconds": 171.38,
+    "received_bytes": 579693178,
+    "expected_bytes": 579693178,
+    "network_bytes": 150607920,
+    "bytes_per_second": 878796,
+    "download_eta_seconds": 0,
+    "errors": [],
+    "finished_at": "2026-10-06T00:45:03.924471+00:00"
+  },
+  "download_eta_seconds": 0,
+  "updated_at": "2026-10-06T00:48:55.537223+00:00",
+  "preparation_started_at": "2026-10-06T00:45:05.428390+00:00",
+  "preparation_pid": 33680,
+  "preparation": {
+    "state": "complete",
+    "elapsed_seconds": 226.501,
+    "manifest": "F:\\Projects\\MultiAgentCDR\\CDRec\\data\\agent_evidence\\cloth_to_sports\\v1\\manifest.json"
+  },
+  "completed_at": "2026-10-06T00:48:55.532142+00:00",
+  "elapsed_seconds": 403,
+  "manifest": "F:\\Projects\\MultiAgentCDR\\CDRec\\data\\agent_evidence\\cloth_to_sports\\v1\\manifest.json"
+}

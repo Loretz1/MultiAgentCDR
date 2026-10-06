@@ -1,0 +1,16 @@
+{"completed": 1, "total": 200, "pair_id": "cloth_sports:prompt_dev:42:13979", "pair_seconds": 3.4, "run_seconds": 174.3}
+{"completed": 2, "total": 200, "pair_id": "cloth_sports:prompt_dev:42:15748", "pair_seconds": 3.404, "run_seconds": 191.38}
+{"completed": 3, "total": 200, "pair_id": "cloth_sports:prompt_dev:42:14055", "pair_seconds": 3.987, "run_seconds": 191.38}
+{"completed": 4, "total": 200, "pair_id": "cloth_sports:prompt_dev:42:14764", "pair_seconds": 3.99, "run_seconds": 191.39}
+{"pair_id": "cloth_sports:prompt_dev:42:13517", "error": "timed out", "type": "ReadTimeout"}
+{"pair_id": "cloth_sports:prompt_dev:42:14061", "error": "timed out", "type": "ReadTimeout"}
+{"pair_id": "cloth_sports:prompt_dev:42:15483", "error": "timed out", "type": "ReadTimeout"}
+{"pair_id": "cloth_sports:prompt_dev:42:14060", "error": "timed out", "type": "ReadTimeout"}
+{"completed": 5, "total": 200, "pair_id": "cloth_sports:prompt_dev:42:14054", "pair_seconds": 10.131, "run_seconds": 194.49}
+{"completed": 6, "total": 200, "pair_id": "cloth_sports:prompt_dev:408:13979", "pair_seconds": 9.604, "run_seconds": 194.7}
+{"completed": 7, "total": 200, "pair_id": "cloth_sports:prompt_dev:42:16722", "pair_seconds": 9.629, "run_seconds": 194.7}
+{"completed": 8, "total": 200, "pair_id": "cloth_sports:prompt_dev:408:3388", "pair_seconds": 9.616, "run_seconds": 194.7}
+{"completed": 9, "total": 200, "pair_id": "cloth_sports:prompt_dev:408:5822", "pair_seconds": 3.227, "run_seconds": 197.71}
+{"completed": 10, "total": 200, "pair_id": "cloth_sports:prompt_dev:408:4787", "pair_seconds": 3.544, "run_seconds": 198.24}
+{"completed": 11, "total": 200, "pair_id": "cloth_sports:prompt_dev:408:14058", "pair_seconds": 3.554, "run_seconds": 198.25}
+{"completed": 12, "total": 200, "pair_id": "cloth_sports:prompt_dev:408:14057", "pair_seconds": 3.918, "run_seconds": 198.62}

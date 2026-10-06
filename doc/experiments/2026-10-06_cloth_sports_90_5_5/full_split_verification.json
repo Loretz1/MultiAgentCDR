@@ -1,0 +1,18 @@
+{
+  "v1_preserved": true,
+  "v2_ratios": [
+    0.9,
+    0.05,
+    0.05
+  ],
+  "v2_groups": {
+    "support": 2816,
+    "prompt_dev": 156,
+    "prompt_val": 156
+  },
+  "old_support_pool_retained_and_expanded": true,
+  "hidden_users_absent_from_visible_training": true,
+  "visible_plus_hidden_reconstructs_full_training": true,
+  "visible_target_interactions": 284523,
+  "hidden_target_interactions": 3371
+}

@@ -1,0 +1,5 @@
+{
+  "state": "failed",
+  "updated_unix": 1791252015.5103166,
+  "error": "Command '['/home/featurize/venvs/agent-evidence/bin/python', 'scripts/collect_real_agent_feedback.py', '--input', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/inputs_prompt_dev/agent_inputs.jsonl', '--output', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/feedback.jsonl']' returned non-zero exit status 1."
+}

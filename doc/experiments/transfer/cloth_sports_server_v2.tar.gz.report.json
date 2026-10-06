@@ -1,0 +1,28 @@
+{
+  "state": "complete",
+  "archive": "F:\\Projects\\MultiAgentCDR\\doc\\experiments\\transfer\\cloth_sports_server_v2.tar.gz",
+  "bytes": 34476717,
+  "sha256": "ab0cfabb29f6d0aa32a656b1eeb1448754ac23edeacf6e9c8351e762e01d331f",
+  "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+  "counts": {
+    "source_users": 39387,
+    "target_users": 34818,
+    "source_items": 23033,
+    "target_items": 18357,
+    "source_interactions": 278677,
+    "target_interactions": 284523
+  },
+  "groups": {
+    "support": 2816,
+    "prompt_dev": 156,
+    "prompt_val": 156
+  },
+  "scope": "prompt_visible_only",
+  "content_checks": {
+    "catalog_id_coverage": true,
+    "source_profile_train_alignment": true,
+    "source_profiles": 39387,
+    "users_without_positive_rating": 146
+  },
+  "gpu_used": false
+}

@@ -1,0 +1,1 @@
+{'state': 'passed', 'context_limit': 4096, 'reasoning_and_label_reserve': 160, 'role_tokens': {'semantic': {'count': 200, 'max': 1930, 'mean': 1312.66}, 'collaborative': {'count': 200, 'max': 809, 'mean': 610.29}, 'overlap': {'count': 200, 'max': 1283, 'mean': 900.34}, 'popularity_bias': {'count': 200, 'max': 963, 'mean': 751.68}}}

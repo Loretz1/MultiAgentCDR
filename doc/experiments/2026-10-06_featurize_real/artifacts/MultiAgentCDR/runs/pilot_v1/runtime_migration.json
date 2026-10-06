@@ -1,0 +1,12 @@
+{
+  "reason": "persistent work directory command/file I/O delays; local disk used for final validation and archiving",
+  "original_root": "/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR",
+  "runtime_root": "/home/featurize/agent_runtime/pilot_v5/MultiAgentCDR",
+  "vllm_pid": 11201,
+  "vllm_log": "/home/featurize/agent_runtime/pilot_v5/vllm.log",
+  "vllm_restart_utc": "2026-10-06 02:34:07",
+  "completed_utc": "2026-10-06 02:42:50",
+  "weights_omitted_from_archive": true,
+  "canonical_status": "runs/pilot_v1/pilot_status.json",
+  "historical_failed_statuses_retained": true
+}

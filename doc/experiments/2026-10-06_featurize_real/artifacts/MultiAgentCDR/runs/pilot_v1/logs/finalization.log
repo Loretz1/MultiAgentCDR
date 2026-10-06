@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/scripts/finalize_real_agent_pilot.py", line 34, in <module>
+    try: main()
+         ^^^^^^
+  File "/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/scripts/finalize_real_agent_pilot.py", line 21, in main
+    subprocess.run([sys.executable,'scripts/summarize_real_agent_feedback.py','--inputs',str(inputs),
+  File "/environment/miniconda3/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/featurize/venvs/agent-evidence/bin/python', 'scripts/summarize_real_agent_feedback.py', '--inputs', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/inputs_prompt_dev/agent_inputs.jsonl', '--feedback', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/feedback_v5.jsonl', '--output', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/result_summary.json', '--bundle', 'bundle']' returned non-zero exit status 1.

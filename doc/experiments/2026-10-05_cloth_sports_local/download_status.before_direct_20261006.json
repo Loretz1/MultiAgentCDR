@@ -1,0 +1,57 @@
+{
+  "state": "running",
+  "started_at": "2026-10-05T14:41:04.143677+00:00",
+  "files": {
+    "meta_Clothing_Shoes_and_Jewelry.json.gz": {
+      "state": "downloading",
+      "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Clothing_Shoes_and_Jewelry.json.gz",
+      "path": "F:\\Projects\\MultiAgentCDR\\CDRec\\data\\Amazon2014\\Clothing_Shoes_and_Jewelry\\raw\\meta_Clothing_Shoes_and_Jewelry.json.gz",
+      "network_bytes": 155189248,
+      "expected_bytes": 280989093,
+      "attempt": 5,
+      "received_bytes": 155189248,
+      "error": "HTTPSConnectionPool(host='snap.stanford.edu', port=443): Read timed out. (read timeout=15)"
+    },
+    "reviews_Clothing_Shoes_and_Jewelry_5.json.gz": {
+      "state": "complete",
+      "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Clothing_Shoes_and_Jewelry_5.json.gz",
+      "path": "F:\\Projects\\MultiAgentCDR\\CDRec\\data\\Amazon2014\\Clothing_Shoes_and_Jewelry\\raw\\reviews_Clothing_Shoes_and_Jewelry_5.json.gz",
+      "network_bytes": 47285200,
+      "expected_bytes": 47285200,
+      "attempt": 1,
+      "received_bytes": 47285200,
+      "sha256": "b87037787e9d5374ce72995a29ac192cde1573513c31abfd4ca7781d802b1e22",
+      "completed_at": "2026-10-05T14:56:22.384953+00:00",
+      "error": null
+    },
+    "reviews_Sports_and_Outdoors_5.json.gz": {
+      "state": "complete",
+      "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Sports_and_Outdoors_5.json.gz",
+      "path": "F:\\Projects\\MultiAgentCDR\\CDRec\\data\\Amazon2014\\Sports_and_Outdoors\\raw\\reviews_Sports_and_Outdoors_5.json.gz",
+      "network_bytes": 68275834,
+      "expected_bytes": 68275834,
+      "attempt": 2,
+      "received_bytes": 68275834,
+      "error": null,
+      "sha256": "8130a2206c3062db1b4b9d4353efc303b0ebd13f48372559fee26c47a1d7fe51",
+      "completed_at": "2026-10-05T15:05:06.782453+00:00"
+    },
+    "meta_Sports_and_Outdoors.json.gz": {
+      "state": "downloading",
+      "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Sports_and_Outdoors.json.gz",
+      "path": "F:\\Projects\\MultiAgentCDR\\CDRec\\data\\Amazon2014\\Sports_and_Outdoors\\raw\\meta_Sports_and_Outdoors.json.gz",
+      "network_bytes": 158334976,
+      "expected_bytes": 183143051,
+      "attempt": 4,
+      "received_bytes": 158334976,
+      "error": "HTTPSConnectionPool(host='snap.stanford.edu', port=443): Max retries exceeded with url: /data/amazon/productGraph/categoryFiles/meta_Sports_and_Outdoors.json.gz (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))"
+    }
+  },
+  "updated_at": "2026-10-06T00:41:51.231148+00:00",
+  "elapsed_seconds": 36050.97,
+  "received_bytes": 429085258,
+  "expected_bytes": 579693178,
+  "network_bytes": 429085258,
+  "bytes_per_second": 11902,
+  "download_eta_seconds": 12654
+}

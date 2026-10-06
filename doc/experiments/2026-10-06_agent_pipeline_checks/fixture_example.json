@@ -1,0 +1,182 @@
+{
+  "fixture_only": true,
+  "not_real_BGE_or_research_results": true,
+  "example": {
+    "pair_id": "cloth_sports:prompt_dev:3:1",
+    "source_user_id": 3,
+    "target_item_id": 1,
+    "source_preference": "Fixture source ratings only.",
+    "candidate_description": "Running trail jacket",
+    "evidence": {
+      "semantic": {
+        "similarity": 0.9238795042037964,
+        "rank": 1,
+        "ranking_items": 3,
+        "score_definition": "L2 positive_source_profile dot L2 target_text;not_probability",
+        "positive_history_items": 2,
+        "encoded_positive_history_items": 2,
+        "related_positive_history": [
+          {
+            "source_item_id": 1,
+            "record_id": "src:3:1",
+            "rating": 5,
+            "title": "Running trail jacket",
+            "similarity": 1.0
+          },
+          {
+            "source_item_id": 2,
+            "record_id": "src:3:2",
+            "rating": 5,
+            "title": "Running trail socks",
+            "similarity": 0.7071067690849304
+          }
+        ],
+        "related_negative_history": [],
+        "missing_source_preference_vector": false,
+        "missing_target_text_vector": false,
+        "missing_target_description": true,
+        "matched_concepts": [
+          {
+            "concept": "jacket",
+            "match_type": "literal_token",
+            "source": {
+              "field": "title",
+              "span": "jacket",
+              "source_item_id": 1,
+              "record_id": "src:3:1"
+            },
+            "target": {
+              "field": "title",
+              "span": "jacket"
+            }
+          },
+          {
+            "concept": "running",
+            "match_type": "literal_token",
+            "source": {
+              "field": "title",
+              "span": "Running",
+              "source_item_id": 1,
+              "record_id": "src:3:1"
+            },
+            "target": {
+              "field": "title",
+              "span": "Running"
+            }
+          },
+          {
+            "concept": "trail",
+            "match_type": "literal_token",
+            "source": {
+              "field": "title",
+              "span": "trail",
+              "source_item_id": 1,
+              "record_id": "src:3:1"
+            },
+            "target": {
+              "field": "title",
+              "span": "trail"
+            }
+          }
+        ],
+        "unmatched_concepts": [],
+        "matched_total": 3,
+        "unmatched_total": 0,
+        "concept_list_limit": 12,
+        "unmatched_meaning": "no literal positive-history support found;not_negative_evidence"
+      },
+      "collaborative": {
+        "g_raw": -0.16162315011024475,
+        "rank": 3,
+        "ranking_items": 3,
+        "rank_percentile": 0.0,
+        "source_history_length": 2,
+        "mapping_support_users": 2,
+        "candidate_visible_train_users": 1,
+        "score_definition": "frozen_EMCDR_mapped_source_user_dot_target_item;not_probability",
+        "missing_visible_target_support": false
+      },
+      "overlap": {
+        "actual_neighbors": 2,
+        "requested_neighbors": 20,
+        "direct_support_users": 1,
+        "indirect_support_users": 2,
+        "union_support_users": 2,
+        "union_support_rate": 1.0,
+        "weighted_union_support_rate": 1.0,
+        "target_neighbor_count": 1,
+        "target_neighbors": [
+          {
+            "item_id": 2,
+            "cooccurrence_cosine": 0.7071067690849304
+          }
+        ],
+        "support_examples": [
+          {
+            "support_user_id": 1,
+            "source_behavior_cosine": 0.9999999403953552,
+            "direct_target_item_id": 1,
+            "observed_target_neighbor_ids": [
+              2
+            ]
+          },
+          {
+            "support_user_id": 2,
+            "source_behavior_cosine": 0.4999999701976776,
+            "direct_target_item_id": null,
+            "observed_target_neighbor_ids": [
+              2
+            ]
+          }
+        ],
+        "missing_neighbors": false,
+        "scope": "source_binary_behavior;support_only;visible_target_cooccurrence",
+        "interaction_meaning": "observed_training_interaction;not_explicit_like",
+        "denominator": "actual_positive_similarity_support_neighbors;union_deduplicated_by_user"
+      },
+      "popularity_bias": {
+        "train_interactions": 1,
+        "distinct_train_users": 1,
+        "visible_target_users": 3,
+        "popularity_rank": 2,
+        "popularity_percentile": 66.66666666666666,
+        "global_support_rate": 0.3333333333333333,
+        "local_support_users": 1,
+        "local_group_size": 2,
+        "local_support_rate": 0.5,
+        "smoothed_local_rate": 0.3611111111111111,
+        "relative_support": 1.0833333333333335,
+        "prior_strength": 10,
+        "smoothing_formula": "(local_users+prior_strength*global_rate)/(local_group_size+prior_strength)",
+        "exposure_available": false,
+        "exposure": null,
+        "missing_neighbors": false,
+        "scope": "visible_target_train;local_direct_support_only;no_causal_bias_claim"
+      }
+    },
+    "provenance": {
+      "bundle_sha256": "1b5ff2ceab47638edfe7e3c525e81d9cd7b36942f130503c9522380f3b48b8fc",
+      "encoder_sha256": "3f0eb301467e449b310f584be1974783de19934511b7a8ea44f4e43192f688d9",
+      "g_sha256": "481a97e72c3ff9413712c12623d72a8658aa0e692fc979a373941ceeb2e362e5",
+      "group": "prompt_dev",
+      "source_profile_template": "fixture",
+      "context_char_limits": {
+        "source": 1400,
+        "candidate": 1000
+      },
+      "retrieval": {
+        "rrf": 0.032266458495966696,
+        "sources": {
+          "semantic": {
+            "score": 0.9238795042037964,
+            "recall_rank": 1
+          },
+          "g": {
+            "score": -0.16162315011024475,
+            "recall_rank": 3
+          }
+        }
+      }
+    }
+  }
+}

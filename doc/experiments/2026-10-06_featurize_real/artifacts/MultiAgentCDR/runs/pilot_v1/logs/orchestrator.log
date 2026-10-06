@@ -1,0 +1,18 @@
+waiting_for_offline_inputs {}
+auditing_real_inputs {}
+waiting_for_qwen_download {}
+starting_vllm {}
+collecting_two_pair_probe {}
+collecting_200_pairs {'workers': 4}
+failed {'error': "Command '['/home/featurize/venvs/agent-evidence/bin/python', 'scripts/collect_real_agent_feedback.py', '--input', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/inputs_prompt_dev/agent_inputs.jsonl', '--output', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/feedback.jsonl']' returned non-zero exit status 1."}
+Traceback (most recent call last):
+  File "/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/scripts/run_real_agent_pilot.py", line 72, in <module>
+    try: main()
+         ^^^^^^
+  File "/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/scripts/run_real_agent_pilot.py", line 67, in main
+    command(['scripts/collect_real_agent_feedback.py','--input',str(inputs),'--output',str(RUN/'feedback.jsonl')],'feedback.log')
+  File "/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/scripts/run_real_agent_pilot.py", line 23, in command
+    subprocess.run([str(PY),*args],cwd=ROOT,stdout=stream,stderr=subprocess.STDOUT,check=True)
+  File "/environment/miniconda3/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/featurize/venvs/agent-evidence/bin/python', 'scripts/collect_real_agent_feedback.py', '--input', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/inputs_prompt_dev/agent_inputs.jsonl', '--output', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/feedback.jsonl']' returned non-zero exit status 1.

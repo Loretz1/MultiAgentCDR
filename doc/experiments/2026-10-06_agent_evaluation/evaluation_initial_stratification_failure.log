@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "F:\Projects\MultiAgentCDR\scripts\evaluate_agent_pilot.py", line 271, in <module>
+    (prepare if args.stage=='prepare' else evaluate)()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\Projects\MultiAgentCDR\scripts\evaluate_agent_pilot.py", line 227, in evaluate
+    'rules':{rule:{'selected':len(chosen&pool),'observed_hits':len(chosen&pool&truth),
+                                  ~~~~~~^~~~~
+TypeError: unsupported operand type(s) for &: 'list' and 'set'

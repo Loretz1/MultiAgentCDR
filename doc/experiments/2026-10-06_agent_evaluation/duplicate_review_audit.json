@@ -1,0 +1,244 @@
+{
+  "scope": "shared_ASIN_candidate_provenance;only_source_train_and_internal_prompt_dev",
+  "analysis_status": "post_hoc_provenance_audit;not_preregistered_new_model_selection",
+  "candidate_count": 9,
+  "identical_review_in_both_domains": 9,
+  "independent_pkl_vs_review_join_verified": 219,
+  "all_observed_matches": 11,
+  "observed_matches_with_rating_at_least4": 10,
+  "matching_ratings": [
+    {
+      "pair_id": "cloth_sports:prompt_dev:42:14764",
+      "same_asin_source_history": "1",
+      "rating": 3.0
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:781:16181",
+      "same_asin_source_history": "1",
+      "rating": 5.0
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1397:1061",
+      "same_asin_source_history": "1",
+      "rating": 4.0
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1397:2949",
+      "same_asin_source_history": "1",
+      "rating": 4.0
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1530:14123",
+      "same_asin_source_history": "1",
+      "rating": 5.0
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1773:7553",
+      "same_asin_source_history": "1",
+      "rating": 5.0
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1991:13437",
+      "same_asin_source_history": "1",
+      "rating": 5.0
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:2174:5973",
+      "same_asin_source_history": "1",
+      "rating": 5.0
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:2204:2295",
+      "same_asin_source_history": "0",
+      "rating": 5.0
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:2930:818",
+      "same_asin_source_history": "1",
+      "rating": 5.0
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:3013:3084",
+      "same_asin_source_history": "0",
+      "rating": 5.0
+    }
+  ],
+  "source_hashes": {
+    "full\\train_src_reviews.jsonl": "802c9807a6fe69c933f16bf8e19d4ca781fc428ad361bb2c4c9437a066aa820e",
+    "hidden_feedback\\prompt_dev_reviews.jsonl": "26d22107efd023652c930b6e5e49d2069d1f2b5b358f754e862d7dd784f11974",
+    "hidden_feedback\\prompt_dev.pkl": "66f12e9104ccf7539475732258f3871d131dbec4a829eeda2f6cc7c35c2a41da"
+  },
+  "cases": [
+    {
+      "pair_id": "cloth_sports:prompt_dev:42:14764",
+      "source_user_id": 42,
+      "target_item_id": 14764,
+      "asin": "B0068VM5T4",
+      "comparisons": [
+        {
+          "same_raw_user": true,
+          "same_asin": true,
+          "same_time": true,
+          "same_rating": true,
+          "same_review_text": true,
+          "same_summary": true,
+          "source_record_id": "src:reviews:171091",
+          "target_record_id": "tgt:reviews:250113",
+          "rating": 3.0
+        }
+      ]
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:781:16181",
+      "source_user_id": 781,
+      "target_item_id": 16181,
+      "asin": "B008EADJPG",
+      "comparisons": [
+        {
+          "same_raw_user": true,
+          "same_asin": true,
+          "same_time": true,
+          "same_rating": true,
+          "same_review_text": true,
+          "same_summary": true,
+          "source_record_id": "src:reviews:209391",
+          "target_record_id": "tgt:reviews:269440",
+          "rating": 5.0
+        }
+      ]
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1397:1061",
+      "source_user_id": 1397,
+      "target_item_id": 1061,
+      "asin": "B0009GBG62",
+      "comparisons": [
+        {
+          "same_raw_user": true,
+          "same_asin": true,
+          "same_time": true,
+          "same_rating": true,
+          "same_review_text": true,
+          "same_summary": true,
+          "source_record_id": "src:reviews:15149",
+          "target_record_id": "tgt:reviews:18650",
+          "rating": 4.0
+        }
+      ]
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1397:2949",
+      "source_user_id": 1397,
+      "target_item_id": 2949,
+      "asin": "B000KK0OLA",
+      "comparisons": [
+        {
+          "same_raw_user": true,
+          "same_asin": true,
+          "same_time": true,
+          "same_rating": true,
+          "same_review_text": true,
+          "same_summary": true,
+          "source_record_id": "src:reviews:32316",
+          "target_record_id": "tgt:reviews:53500",
+          "rating": 4.0
+        }
+      ]
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1530:14123",
+      "source_user_id": 1530,
+      "target_item_id": 14123,
+      "asin": "B005GYGDFG",
+      "comparisons": [
+        {
+          "same_raw_user": true,
+          "same_asin": true,
+          "same_time": true,
+          "same_rating": true,
+          "same_review_text": true,
+          "same_summary": true,
+          "source_record_id": "src:reviews:158153",
+          "target_record_id": "tgt:reviews:241339",
+          "rating": 5.0
+        }
+      ]
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1773:7553",
+      "source_user_id": 1773,
+      "target_item_id": 7553,
+      "asin": "B001OCMA06",
+      "comparisons": [
+        {
+          "same_raw_user": true,
+          "same_asin": true,
+          "same_time": true,
+          "same_rating": true,
+          "same_review_text": true,
+          "same_summary": true,
+          "source_record_id": "src:reviews:70168",
+          "target_record_id": "tgt:reviews:133817",
+          "rating": 5.0
+        }
+      ]
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:1991:13437",
+      "source_user_id": 1991,
+      "target_item_id": 13437,
+      "asin": "B004ZFN3QY",
+      "comparisons": [
+        {
+          "same_raw_user": true,
+          "same_asin": true,
+          "same_time": true,
+          "same_rating": true,
+          "same_review_text": true,
+          "same_summary": true,
+          "source_record_id": "src:reviews:142308",
+          "target_record_id": "tgt:reviews:230957",
+          "rating": 5.0
+        }
+      ]
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:2174:5973",
+      "source_user_id": 2174,
+      "target_item_id": 5973,
+      "asin": "B001A40CT4",
+      "comparisons": [
+        {
+          "same_raw_user": true,
+          "same_asin": true,
+          "same_time": true,
+          "same_rating": true,
+          "same_review_text": true,
+          "same_summary": true,
+          "source_record_id": "src:reviews:59221",
+          "target_record_id": "tgt:reviews:104237",
+          "rating": 5.0
+        }
+      ]
+    },
+    {
+      "pair_id": "cloth_sports:prompt_dev:2930:818",
+      "source_user_id": 2930,
+      "target_item_id": 818,
+      "asin": "B00075ZXLE",
+      "comparisons": [
+        {
+          "same_raw_user": true,
+          "same_asin": true,
+          "same_time": true,
+          "same_rating": true,
+          "same_review_text": true,
+          "same_summary": true,
+          "source_record_id": "src:reviews:9916",
+          "target_record_id": "tgt:reviews:14803",
+          "rating": 5.0
+        }
+      ]
+    }
+  ]
+}

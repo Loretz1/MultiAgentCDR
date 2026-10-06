@@ -1,0 +1,4 @@
+{
+  "state": "failed",
+  "error": "Command '['/home/featurize/venvs/agent-evidence/bin/python', 'scripts/summarize_real_agent_feedback.py', '--inputs', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/inputs_prompt_dev/agent_inputs.jsonl', '--feedback', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/feedback_v5.jsonl', '--output', '/home/featurize/work/MultiAgentCDR_runs/2026-10-06_cloth_sports/MultiAgentCDR/runs/pilot_v1/result_summary.json', '--bundle', 'bundle']' returned non-zero exit status 1."
+}
