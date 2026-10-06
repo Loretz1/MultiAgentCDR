@@ -1,0 +1,27 @@
+{
+  "state": "complete",
+  "completed_at": "2026-10-06T09:02:45.388719+00:00",
+  "candidate_manifest_sha256": "31afd7c601f283c6abbd540905da725d4b53f9efeae0e627ff8b4dc3f5105eea",
+  "files": {
+    "results.json": {
+      "sha256": "2aca35154dd0108f01bdcf4238f4b5633aef7150450ac5e4735c09452f80e9ed",
+      "bytes": 9572
+    },
+    "aggregate_metrics.csv": {
+      "sha256": "961ebaf64e29f34f330dbee90b6646122c7f35b85175ca9e53f102eba1e01b8a",
+      "bytes": 1313
+    },
+    "per_user_metrics.csv": {
+      "sha256": "803fe1284e4259c5e2a0065f3ccde21d61677a84cc270f0f77e43ad3f2bf5d1d",
+      "bytes": 35841
+    },
+    "comparison_top100.csv": {
+      "sha256": "6fbc40cecf9e85804c3e667696187655b957f3aee28aa5453446705b442ffb9e",
+      "bytes": 1392
+    },
+    "observed_history_evaluation_only.csv": {
+      "sha256": "86ce4ecdb3044e7b686749ba44f5b819277c7ef8a5bf7527d1d65b4d343b1fc0",
+      "bytes": 24094
+    }
+  }
+}

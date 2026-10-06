@@ -1,0 +1,21 @@
+{
+  "state": "pre_registered",
+  "group": "prompt_dev",
+  "users": 156,
+  "candidates_per_user": 100,
+  "candidate_method": "G_only_standard_catalog",
+  "input_pairs": 15600,
+  "v6_judgments": 62400,
+  "paired_v5_diagnostic_pairs": 200,
+  "paired_sample_uses_hidden_labels": false,
+  "internal_validation_read": false,
+  "formal_test_read": false,
+  "model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "revision": "5a5a776300a41aaa681dd7ff0106608ef2bc90db",
+  "workers": 4,
+  "context_tokens": 8192,
+  "v6_is_expert_validated": false,
+  "server": "workspace.featurize.cn:64836",
+  "remote_directory": "/home/featurize/agent_runtime/2026-10-06_g100_v6",
+  "execution": "background;launch_and_report_eta;do_not_wait_for_full_completion"
+}

@@ -1,0 +1,27 @@
+{
+  "state": "complete",
+  "request_sha256": "a686de989472b9e8d55da9975467917a12fa0b58017396f62eaa80b5deb9fbbf",
+  "files": {
+    "results.json": {
+      "sha256": "924eef67b1e6ce28f03157878dcfc3b1670097f82a215499133bfb400e28cadf",
+      "bytes": 30261
+    },
+    "aggregate_metrics.csv": {
+      "sha256": "556a2d3fae86ea3115555c637ff3b8fa102c19decafe342126c358430869aad6",
+      "bytes": 7023
+    },
+    "per_user_metrics.csv": {
+      "sha256": "b24b52ae978498781e1461fcde06c31ef99fb5a1a114d64e6e182930c82c3f8a",
+      "bytes": 333609
+    },
+    "observed_history_evaluation_only.csv": {
+      "sha256": "e7a7adfae836f998ac953a0f6c14be7bf92dbb772c93e908b5cf84b7889b08a2",
+      "bytes": 31872
+    }
+  },
+  "label_source": {
+    "path": "CDRec\\data\\agent_evidence\\cloth_to_sports\\v2\\hidden_feedback\\prompt_dev.pkl",
+    "sha256": "66f12e9104ccf7539475732258f3871d131dbec4a829eeda2f6cc7c35c2a41da"
+  },
+  "completed_at": "2026-10-06T07:19:35.612843+00:00"
+}

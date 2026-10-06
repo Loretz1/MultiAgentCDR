@@ -1,0 +1,47 @@
+{
+  "state": "complete",
+  "completed_at": "2026-10-06T09:27:19.633664+00:00",
+  "request": {
+    "kind": "recall_budget_prefixes",
+    "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+    "config": {
+      "script_sha256": "74ae07cfff7944e210e0d5339b1f50594bd3db2830792e73e756fba18062eccc",
+      "common_sha256": "7d6d8ad375b5d9c3b65bacf3e72bfae3b8896571eb85695daecd65a0416e2cbe",
+      "metrics_source_sha256": "06b150e9cc9d12084a161edc02b4b0c36ff490a0934d25dfa906e4023b2329b3",
+      "budgets": [
+        10,
+        20,
+        50,
+        100
+      ],
+      "methods": [
+        "popularity",
+        "g",
+        "semantic"
+      ],
+      "group": "prompt_dev",
+      "users": 156,
+      "policy": "standard;source_ASIN_stratification_only",
+      "source_candidate_manifests": {
+        "popularity": "31afd7c601f283c6abbd540905da725d4b53f9efeae0e627ff8b4dc3f5105eea",
+        "g_and_semantic": "5e8d8a3530baa9743b9ff5ee2fc169ebc128f276fe4f75736362c0eca6ed86c2"
+      },
+      "nested_prefixes": true,
+      "rescoring": false,
+      "label_source": "cached_internal_development_evaluation_only",
+      "internal_prompt_val_read": false,
+      "formal_evaluation_read": false,
+      "llm_calls": 0,
+      "gpu_used": false
+    }
+  },
+  "files": {
+    "rankings_top100.jsonl": {
+      "sha256": "3d99698ef15e19c147b5011775aaa8b2b8e8749ea05806322295e01aae90f1ab",
+      "bytes": 261827
+    }
+  },
+  "users": 156,
+  "hidden_labels_read": false,
+  "nested_prefixes": true
+}

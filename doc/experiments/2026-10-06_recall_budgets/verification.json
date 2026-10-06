@@ -1,0 +1,8 @@
+{
+  "state": "passed",
+  "metric_rows": 12,
+  "per_user_rows": 1872,
+  "independent_trace_intersection_checks": 12,
+  "nested_budgets_verified": true,
+  "existing_rows_reproduced": 7
+}

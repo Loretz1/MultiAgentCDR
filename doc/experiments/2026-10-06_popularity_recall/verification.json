@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "checks": [
+    "visible-only popularity independently counted and sorted",
+    "one shared Top100 for all users",
+    "156/20 cohorts match archived users",
+    "frozen ranking before label read",
+    "four aggregate rows independently checked against observed-history traces",
+    "comparison label source matches"
+  ],
+  "metrics_rows": 4,
+  "comparison_rows": 10,
+  "internal_prompt_val_read": false,
+  "formal_evaluation_read": false
+}

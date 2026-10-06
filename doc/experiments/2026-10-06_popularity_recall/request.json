@@ -1,0 +1,35 @@
+{
+  "kind": "popularity_top100_candidates",
+  "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+  "config": {
+    "script_sha256": "d02cbebccd825e985f6ce50757f0d094af821ee8ca71f109bd73f615497b39c3",
+    "dependency_sha256": {
+      "agent_pipeline_common.py": "7d6d8ad375b5d9c3b65bacf3e72bfae3b8896571eb85695daecd65a0416e2cbe",
+      "diagnose_candidate_recall.py": "06b150e9cc9d12084a161edc02b4b0c36ff490a0934d25dfa906e4023b2329b3"
+    },
+    "legacy_pilot_input_sha256": "dcd24afa46e9729d3584410c3b087d88848b669556e7d1178c01040255d8a48e",
+    "group": "prompt_dev",
+    "k": 100,
+    "cohorts": [
+      "legacy_pilot_20",
+      "all_dev_156"
+    ],
+    "modes": [
+      "interaction_count",
+      "distinct_users"
+    ],
+    "primary_mode": "interaction_count",
+    "popularity_scope": "visible_target_training_only;dev_and_val_target_histories_removed",
+    "ranking": "count_desc_then_target_item_id_asc",
+    "candidate_policy": "standard_catalog;no_source_ASIN_filter;all_users_share_same_list",
+    "item_eligibility": "all_benchmark_target_item_IDs;ID_zero_excluded",
+    "source_ASIN_use": "stratification_only;does_not_change_candidates",
+    "generation_reads_hidden_feedback": false,
+    "evaluation_labels": "internal_prompt_dev_only",
+    "internal_prompt_val_read": false,
+    "formal_evaluation_read": false,
+    "llm_calls": 0,
+    "gpu_used": false,
+    "full_agent_evidence_constructed": false
+  }
+}

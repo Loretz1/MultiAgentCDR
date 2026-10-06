@@ -1,0 +1,25 @@
+{
+  "stage": "paused_by_user",
+  "updated_unix": 1791274499.307435,
+  "ssh_host": "workspace.featurize.cn",
+  "ssh_port": 64836,
+  "qwen_last_observed_state": "application_startup_complete",
+  "qwen_last_observed_pid": 3411,
+  "qwen_last_observed_beijing_time": "2026-10-06 15:56:07",
+  "agent_collection_started": false,
+  "package_uploaded": false,
+  "local_pairs": 15600,
+  "local_users": 156,
+  "independently_audited_pairs": 200,
+  "tests_passed": 5,
+  "estimated_duration_hours_after_start": [
+    8,
+    12
+  ],
+  "estimate_basis": "previous v5 pilot throughput;current GPU throughput not measured",
+  "paused_at": "2026-10-06T16:14:59.307419+08:00",
+  "auto_launch_authorized": false,
+  "remote_shutdown_confirmed": false,
+  "remote_shutdown_error": "SSH TCP connection refused",
+  "local_artifacts_retained": true
+}

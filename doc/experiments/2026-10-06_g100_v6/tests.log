@@ -1,0 +1,8 @@
+{"completed": 1, "total": 2, "pair_id": "1", "pair_seconds": 0.01, "run_seconds": 0.0}
+{"completed": 2, "total": 2, "pair_id": "2", "pair_seconds": 0.01, "run_seconds": 0.0}
+{"stage": "retrying_v6", "pid": 21156, "updated_unix": 1791274017.6914349, "v6_expected_pairs": 15600, "v5_expected_pairs": 200, "attempt": 1, "completed": 198, "returncode": 1}
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.135s
+
+OK

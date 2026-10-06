@@ -1,0 +1,20 @@
+{
+  "files": {
+    "scripts/agent_pipeline_common.py": "7d6d8ad375b5d9c3b65bacf3e72bfae3b8896571eb85695daecd65a0416e2cbe",
+    "scripts/collect_agent_feedback.py": "4660a05ae14660847656e72e52320f850299eab2b880322da0c0d9ced3b82408",
+    "scripts/collect_g100_feedback.py": "b8933a7ef04ea3c3a9116ac2876462e5bfa7d8bfcc2cc68159d07d9ff9aa709e",
+    "scripts/agent_prompts_v6.py": "74fd479a3ffc7794a700b86c47c125dfffcfb62381b571f03cfef11f98c1f994",
+    "scripts/audit_g100_feedback.py": "1084ccebd499534d08a1610f823edffcc28c6f98d3387b6dd9cecdf7a0a2b11b",
+    "scripts/run_g100_v6_background.py": "087b782ec200b3be73a53c8a3e8a3dd2eecd8585d04b7edf51010654c5b097f1",
+    "scripts/start_g100_vllm.sh": "5151bb1e253391facc0c19f2c90c55c52a49c4faf89ad3cbda7912279c798df8",
+    "scripts/launch_g100_v6.sh": "43eef06af8aee626796540ce50d0bc7be5e579fe6862c1eeb2de7deef23f50aa",
+    "inputs/full.jsonl": "fe6caea54c775c049abf383036fce5a16b2fd3d524017cef2b9b05caab5addab",
+    "inputs/pilot.jsonl": "b3a85d25202fea97627290f65ca273f0d923574d4fd67abd760c923661d3bd9b",
+    "inputs/manifest.json": "76634258f2942777b90ca36fec66f10a256e1975a10ca652cf1dc78abac4842d",
+    "inputs/selection.json": "0599ae43aed2b955a1d38d0d2ab5babcd7cd77cad09f28dd79ca60336e7f7613",
+    "experiment_request.json": "567ac476836fa35193c7beaba9a6a6672d43a506637c9429e8dd0ded36efb2c7"
+  },
+  "hidden_target_feedback_uploaded": false,
+  "expected_v6_pairs": 15600,
+  "expected_v5_pairs": 200
+}

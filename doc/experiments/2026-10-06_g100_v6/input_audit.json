@@ -1,0 +1,16 @@
+{
+  "state": "passed",
+  "pairs": 200,
+  "users": 156,
+  "checks": {
+    "g_score_and_rank": 200,
+    "semantic_score": 200,
+    "literal_concept_provenance": 200,
+    "overlap_support_and_denominators": 200,
+    "popularity_counts_and_scope": 200
+  },
+  "input_sha256": "b3a85d25202fea97627290f65ca273f0d923574d4fd67abd760c923661d3bd9b",
+  "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+  "hidden_target_feedback_read": false,
+  "method": "independent_sets_and_counts;vector_dot_and_rank_recomputed"
+}

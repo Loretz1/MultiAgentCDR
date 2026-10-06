@@ -1,0 +1,44 @@
+{
+  "verification_type": "Notion_connector_write_then_fetch;not_visual_browser_verification",
+  "pages": [
+    {
+      "page_id": "https://app.notion.com/p/3f16864168f5816e9834ee1b6ab84306?pvs=204",
+      "title": "Cloth→Sports 候选召回诊断（2026-10-06）",
+      "last_edited_at": "2026-10-06T07:24:28.814Z",
+      "checks": {
+        "completed": true,
+        "metrics": true,
+        "tables": true,
+        "attachments": true,
+        "not_pending": true,
+        "scope": true
+      },
+      "unknown_block_count": 0,
+      "truncated": false
+    },
+    {
+      "page_id": "https://app.notion.com/p/3f06864168f581d6bc09fb8ad055d34f?pvs=204",
+      "title": "Cloth→Sports 离线输入准备",
+      "last_edited_at": "2026-10-06T07:25:41.065Z",
+      "checks": {
+        "recall_checked": true,
+        "scope": true,
+        "new_page_link": true
+      },
+      "unknown_block_count": 0,
+      "truncated": false
+    },
+    {
+      "page_id": "https://app.notion.com/p/3e66864168f580e29049feefdfeda3cf?pvs=204",
+      "title": "Multi-Agent CDR实验",
+      "last_edited_at": "2026-10-06T07:24:32.407Z",
+      "checks": {
+        "finished_index": true,
+        "no_running_entry": true,
+        "new_page_link": true
+      },
+      "unknown_block_count": 0,
+      "truncated": false
+    }
+  ]
+}

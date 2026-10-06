@@ -1,0 +1,38 @@
+{
+  "state": "complete",
+  "files": {
+    "results.json": {
+      "sha256": "1d4187a62c7e707e0994244aee8ca69e672ac9a0b613eeb1e93cf52ad3c5f22b",
+      "bytes": 11479
+    },
+    "aggregate_metrics.csv": {
+      "sha256": "66d5cabcf298c687f20a6078f2cb8bfb2359dc11742ec2ae7e3cd0e296bf0bc3",
+      "bytes": 2879
+    },
+    "per_user_metrics.csv": {
+      "sha256": "79a842ee756af23f7fdd902737a4c1fdbbb276284ce3aca59b60841470a21815",
+      "bytes": 105492
+    },
+    "verification.json": {
+      "sha256": "23a8333231b416023a2e800941bf232a8ad0313b8edfe5ea09ac91e239a22cf9",
+      "bytes": 191
+    },
+    "results_table.md": {
+      "sha256": "5944e71b820c6429aa456f74a03694137a65c58e7c23a21ff00f1805499f2326",
+      "bytes": 1132
+    },
+    "notion_results.md": {
+      "sha256": "2cf653faf20576fccf9a211506f2769de22c41d2ecbcffc82e237a0d5a9ac120",
+      "bytes": 1961
+    },
+    "recall_vs_budget.png": {
+      "sha256": "11fd9a008c22de6a1a2b006346411afa1de0153fbc33bfa3a2b602bea6289174",
+      "bytes": 130611
+    },
+    "recall_vs_budget.svg": {
+      "sha256": "c887dd79365dc04ae3a51bbf617a1da0af170c1956d71831a4f8e7605090c2a1",
+      "bytes": 64165
+    }
+  },
+  "candidate_manifest_sha256": "a4f3812fc7d3f85b980b898d671db7ec993ddcc2ee39bdf20d3f03e75007638e"
+}

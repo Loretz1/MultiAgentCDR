@@ -1,0 +1,73 @@
+{
+  "state": "complete",
+  "completed_at": "2026-10-06T07:19:02.352375+00:00",
+  "request": {
+    "kind": "candidate_recall_rankings",
+    "bundle_sha256": "7d9c0026ffef1204891e5dfd91a3540c96ebe411a0f905208335aafe1c0ed16c",
+    "config": {
+      "script_sha256": "06b150e9cc9d12084a161edc02b4b0c36ff490a0934d25dfa906e4023b2329b3",
+      "dependency_sha256": {
+        "agent_pipeline_common.py": "7d6d8ad375b5d9c3b65bacf3e72bfae3b8896571eb85695daecd65a0416e2cbe",
+        "export_agent_evidence.py": "0647ef534d5dc7c2b440d9dd8b99d760c956b5ec37fc34d576cc29e3741c323a",
+        "encode_agent_text.py": "75cd182eea4be895a023b3d4c30eb134880215046969926a714ceae6dbf67fe6"
+      },
+      "group": "prompt_dev",
+      "user_limit": null,
+      "budgets": [
+        10,
+        50,
+        100,
+        200
+      ],
+      "methods": [
+        "semantic",
+        "g",
+        "rrf",
+        "union"
+      ],
+      "policies": [
+        "standard",
+        "exclude_source_asin"
+      ],
+      "rrf_depth_per_method": 200,
+      "rrf_constant": 60,
+      "rrf_budget_meaning": "K_total_pairs_per_user;fixed_200_per_method_pool_for_all_K",
+      "union_budget_meaning": "each_method_TopK_union;up_to_2K_pairs_per_user;not_equal_budget",
+      "ranking": "score_desc_then_item_id_asc;RRF_desc_then_item_id_asc",
+      "exclude_source_asin": "source_visible_history_only;filter_before_topK_and_RRF",
+      "zero_semantic_profile": "empty_semantic_recall;G_still_available",
+      "generation_reads_hidden_feedback": false,
+      "evaluation_labels": "internal_prompt_dev_only",
+      "formal_test_and_internal_validation_read": false,
+      "hidden_interaction_is_preference_gold": false,
+      "diagnostic_only": true,
+      "llm_calls": 0,
+      "gpu_used": false,
+      "legacy_audit": "20_pilot_users;Top50_per_method_RRF_then10;before_hidden_feedback",
+      "encoder_manifest_sha256": "fe81b09c9ca562df3821e3834dd780dbb324c9700a4d5eb9c103174fada64257",
+      "g_manifest_sha256": "5566790f3ad5c28406252a52dc6a129a1c2794b9654884a2ee241b429fed9710"
+    }
+  },
+  "files": {
+    "rankings.jsonl": {
+      "sha256": "a203dc6a545a5b898749bbfb75f07915659ae971f8f595f80af501935b66a4f5",
+      "bytes": 1022469
+    },
+    "scores.npz": {
+      "sha256": "cc7a8545d626d63020f3426d64efb39715e82bbdf98a64dac6aa79595a8af55c",
+      "bytes": 20087122
+    },
+    "generation_audit.json": {
+      "sha256": "24cb2d6bf2fc37341200839f698fe4d4abe20014dac3947aecd1ce89d82d1d5d",
+      "bytes": 8951
+    }
+  },
+  "users": 156,
+  "candidate_budgets": [
+    10,
+    50,
+    100,
+    200
+  ],
+  "hidden_feedback_read": false
+}
